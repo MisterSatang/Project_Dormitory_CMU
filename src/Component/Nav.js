@@ -3,7 +3,7 @@ import React from 'react';
 export default function Navbar() {
   return(
     <>  
-        <div className="container fixed-top border rounded rounded-4 bg-white mt-2">
+        <div className="container fixed-top border-0 rounded-4 bg-white shadow mt-2">
         <nav className="navbar navbar-expand-lg ">
             <div className="container-fluid">
             <a className="navbar-brand" href="#"><div className="text-purple fs-5 fw-bold">หอพักนักศึกษา CMU</div></a>
@@ -131,10 +131,7 @@ export default function Navbar() {
             </div>
         </div>
         </nav>
-        </div>
-
-        <img src="https://elearning.cmu.ac.th/pluginfile.php/1/theme_space/sliderimage1/1654502497/20597668_10213765367385655_1137600657_o%20%283%29.jpg" alt="Bg-cmu" className="w-100" />
-        
+        </div>        
     </>
   );
 }
