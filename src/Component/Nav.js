@@ -13,10 +13,12 @@ export default function Navbar() {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#">ข่าวสาร</a>
+                    <a className="nav-link active" aria-current="page" href="#">
+                    <i class="bi bi-book me-1"></i>ข่าวสาร</a>
                 </li>
                 <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-building me-1"></i>
                     หอพักนักศึกษาชาย
                     </a>
                     <ul className="dropdown-menu">
@@ -54,6 +56,7 @@ export default function Navbar() {
                 </li>
                 <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-building me-1"></i>
                     หอพักนักศึกษาหญิง
                     </a>
                     <ul className="dropdown-menu">
@@ -120,14 +123,14 @@ export default function Navbar() {
                     </ul>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">แผนที่</a>
+                    <a className="nav-link" href="#"><i class="bi bi-map me-1"></i>แผนที่</a>
                 </li>
                 <li className="nav-item">
                     <a className="nav-link disabled">Coming Soon</a>
                 </li>
                 </ul>
-                <button type="button" class="btn btn-outline-primary">จองห้อง</button>
-
+                <button type="button" class="btn btn-outline-primary">
+                    <i class="bi bi-pen me-1"></i>จองห้อง</button>
             </div>
         </div>
         </nav>
