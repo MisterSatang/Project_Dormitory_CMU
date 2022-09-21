@@ -1,4 +1,6 @@
-export default function Navbar() {
+import React from 'react';
+
+export default function Footer() {
     return (
         <>
             <div class="container my-4" >
