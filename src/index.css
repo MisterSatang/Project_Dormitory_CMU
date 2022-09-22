@@ -53,3 +53,9 @@ footer {
 .hover-link :hover{
   margin-left: 0.2rem;
 }
+.text-white-80{
+  color: rgba(255, 255, 255, 0.934);
+}
+.bg-dark-150{
+  background-color: #00000030;
+}
