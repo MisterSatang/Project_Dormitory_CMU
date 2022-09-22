@@ -31,8 +31,8 @@
   font-weight: 400;
 }
 
-.marjin8 {
-  margin-top: 8;
+.marjin15 {
+  margin-top: 6rem;
 }
 
 .bgimage {
@@ -48,11 +48,16 @@
 }
 
 .h-contain-map {
-  height: 29rem;
+  max-height: 40rem;
 }
 
 .contain-map {
   width: 100%;
+  object-fit: contain;
+}
+
+.bg-map {
+  background-image: url("https://elearning.cmu.ac.th/pluginfile.php/1/theme_space/sliderimage1/1654502497/20597668_10213765367385655_1137600657_o%20%283%29.jpg");
 }
 
 a:hover,
