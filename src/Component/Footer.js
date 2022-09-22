@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <>
             <footer>
-                <div class=" container py-1">
+                <div class=" container pt-3 pb-1">
                     <div class="row py-3">
                         <div class="col-lg-4 col-md-6 mb-lg-0"><img src="https://www.cmu.ac.th/content/images/logo_footer.png" alt width={330} className="mb-3" />
 
