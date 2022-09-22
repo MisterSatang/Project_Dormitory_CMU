@@ -10,7 +10,7 @@ export default function Footer() {
                         <div class="col-sm-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <img src='https://library.cmu.ac.th/layout/default/images/CMU_WEB/Chiang_Mai_University_Logo.png' height="90" alt=""/>
+                                    <img src='https://library.cmu.ac.th/layout/default/images/CMU_WEB/Chiang_Mai_University_Logo.png' height="90" alt="" />
                                     <h5 class="card-title">Special title treatment</h5>
                                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                     <a href="#" class="btn btn-primary">Go somewhere</a>

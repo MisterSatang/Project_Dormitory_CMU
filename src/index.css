@@ -5,23 +5,52 @@
   margin: 0;
   font-family: 'Prompt';
 }
+
 .bg-purple {
   background: #6f42c1;
 }
+
 .text-purple {
   color: #6f42c1;
 }
-.text-glay{
+
+.text-glay {
   color: rgb(180, 178, 178);
-  font-weight:200;
+  font-weight: 200;
 }
-.btn-outline-primary{
+
+.btn-outline-primary {
   color: #6f42c1 !important;
   border-color: #6f42c1 !important;
 }
+
 .btn-outline-primary:hover {
   background: #6f42c1 !important;
   border-color: #6f42c1 !important;
   color: #ffffff !important;
   font-weight: 400;
+}
+
+.marjin8 {
+  margin-top: 8;
+}
+
+.bgimage {
+  /* background-image: url("../public/img_dormitory/Map/cmuin.jpg"); */
+  background-color: #6f42c1;
+}
+
+.image-containner {
+  height: 33rem;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.h-contain-map {
+  height: 29rem;
+}
+
+.contain-map {
+  width: 100%;
 }
