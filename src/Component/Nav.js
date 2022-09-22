@@ -67,57 +67,57 @@ export default function Navbar() {
                                         </li>
                                         <li>
                                             <a className="dropdown-item d-inline-flex" href="#">หอพักหญิง 2
-                                                <div className="ms-2 fs-6 text-glay">: 053-944711</div>
+                                                <div className="ms-2 fs-6 text-glay">: 053-944722</div>
                                             </a>
                                         </li>
                                         <li>
                                             <a className="dropdown-item d-inline-flex" href="#">หอพักหญิง 3
-                                                <div className="ms-2 fs-6 text-glay">: 053-944711</div>
+                                                <div className="ms-2 fs-6 text-glay">: 053-944723</div>
                                             </a>
                                         </li>
                                         <li>
                                             <a className="dropdown-item d-inline-flex" href="#">หอพักหญิง 4
-                                                <div className="ms-2 fs-6 text-glay">: 053-944711</div>
+                                                <div className="ms-2 fs-6 text-glay">: 053-944724</div>
                                             </a>
                                         </li>
                                         <li>
                                             <a className="dropdown-item d-inline-flex" href="#">หอพักหญิง 5
-                                                <div className="ms-2 fs-6 text-glay">: 053-944711</div>
+                                                <div className="ms-2 fs-6 text-glay">: 053-944725</div>
                                             </a>
                                         </li>
                                         <li>
                                             <a className="dropdown-item d-inline-flex" href="#">หอพักหญิง 6
-                                                <div className="ms-2 fs-6 text-glay">: 053-944711</div>
+                                                <div className="ms-2 fs-6 text-glay">: 053-944726</div>
                                             </a>
                                         </li>
                                         <li>
                                             <a className="dropdown-item d-inline-flex" href="#">หอพักหญิง 7
-                                                <div className="ms-2 fs-6 text-glay">: 053-944711</div>
+                                                <div className="ms-2 fs-6 text-glay">: 053-944727</div>
                                             </a>
                                         </li>
                                         <li>
                                             <a className="dropdown-item d-inline-flex" href="#">หอพักหญิง 8
-                                                <div className="ms-2 fs-6 text-glay">: 053-944711</div>
+                                                <div className="ms-2 fs-6 text-glay">: 053-944728</div>
                                             </a>
                                         </li>
                                         <li>
                                             <a className="dropdown-item d-inline-flex" href="#">หอพักหญิง 9
-                                                <div className="ms-2 fs-6 text-glay">: 053-944711</div>
+                                                <div className="ms-2 fs-6 text-glay">: 053-944791</div>
                                             </a>
                                         </li>
                                         <li>
                                             <a className="dropdown-item d-inline-flex" href="#">หอพักหญิง 10
-                                                <div className="ms-2 fs-6 text-glay">: 053-944711</div>
+                                                <div className="ms-2 fs-6 text-glay">: 053-944773</div>
                                             </a>
                                         </li>
                                         <li>
                                             <a className="dropdown-item d-inline-flex" href="#">หอพักหญิง 11
-                                                <div className="ms-2 fs-6 text-glay">: 053-944711</div>
+                                                <div className="ms-2 fs-6 text-glay">: 053-944709</div>
                                             </a>
                                         </li>
                                         <li>
                                             <a className="dropdown-item d-inline-flex" href="#">หอพักหญิง 12
-                                                <div className="ms-2 fs-6 text-glay">: 053-944711</div>
+                                                <div className="ms-2 fs-6 text-glay">: 053-944710</div>
                                             </a>
                                         </li>
                                     </ul>
