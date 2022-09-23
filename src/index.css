@@ -50,7 +50,6 @@
   height: 33rem;
   width: 100%;
   object-fit: cover;
-
 }
 
 .h-contain-map {
@@ -123,4 +122,12 @@ footer {
 .content-booking-absolute {
     top: 9rem;
   }
+}
+.image-bg-select_room {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+}
+.rounded-top-4{
+  border-radius:1em 1em 0em 0em;
 }
