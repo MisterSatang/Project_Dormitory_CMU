@@ -60,6 +60,16 @@
   background-image: url("https://elearning.cmu.ac.th/pluginfile.php/1/theme_space/sliderimage1/1654502497/20597668_10213765367385655_1137600657_o%20%283%29.jpg");
 }
 
+.alert-trim {
+  display: inline-block;
+}
+
+.hight-photo {
+  height: 18rem;
+  width: 100%;
+  object-fit: cover;
+}
+
 a:hover,
 a:focus {
   text-decoration: none;
