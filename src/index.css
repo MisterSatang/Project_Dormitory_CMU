@@ -107,4 +107,10 @@ footer {
 .content-booking-absolute{
   position: absolute;
   top:12rem;
-} 
+}
+
+@media only screen and (max-width: 1200px) {
+.content-booking-absolute {
+    top: 9rem;
+  }
+}

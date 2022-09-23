@@ -33,9 +33,9 @@ export default function App() {
                 <div className="row">
                     <div className="col-1"></div>
                     <div className="col-10">
-                        <div className="d-flex h-contain-map justify-content-center p-4 marjin15">
+                        <div className="d-flex  justify-content-center p-4 marjin15">
                             <div className="d-flex bg-white shadow rounded-4 p-4 ">
-                                <img src="img_dormitory/Map/map_dorm.jpg" className="contain-map photo-map col-12" />
+                                <img src="img_dormitory/Map/map_dorm.jpg" className="contain-map h-contain-map" />
                             </div>
                         </div>
                     </div>

@@ -11,24 +11,24 @@ export default function App() {
         <div class="container-fluid content-booking-absolute">
           <div class="row">
             <div class="col-1"></div>
-            <div class="col-10 p-4 px-5 bg-white shadow rounded-4">
+            <div class="col-10 p-xl-4 px-xl-5 p-1 pt-4 bg-white shadow rounded-4">
               <div class="row">
                     <div class="text-center fs-4 fw-bold">จองหอพัก นักศึกษามหาลัยเชียงใหม่</div>
               </div>
               <div class="row m-3">
-                  <div class="col-5">
+                  <div class="col-xl-5 col-12 ">
                       <div class="d-flex h-2 mb-1">
                         Email Address
                       </div>
                       <input type="text" id="email" class="form-control" placeholder="Email@cmu.ac.th" />
                   </div>
-                  <div class="col-5">
+                  <div class="col-xl-5 col-12">
                       <div class="d-flex h-2 mb-1">
                         Password
                       </div>
                       <input type="password" id="email" class="form-control" placeholder="Password" />
                   </div>
-                  <div class="col-2">
+                  <div class="col-xl-2 col-12">
                     <div class="d-flex h-2 mb-1"></div>
                       <button type="button" class="btn btn-primary w-100 rounded-pill">Confirm</button>
                   </div>
