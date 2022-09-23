@@ -7,7 +7,7 @@
 }
 
 .bg-purple {
-  background: #6f42c1;
+  background: #6f42c1 !important;
 }
 
 .text-purple {
@@ -30,7 +30,13 @@
   color: #ffffff !important;
   font-weight: 400;
 }
-
+.btn-primary{
+  background: #6f42c1 !important;
+  border: 0 !important;
+}
+.btn-primary:hover {
+  background: #5b36a1 !important;
+}
 .marjin15 {
   margin-top: 6rem;
 }
@@ -107,4 +113,14 @@ footer {
 
 .bg-dark-150 {
   background-color: #00000030;
+}
+.content-booking-absolute{
+  position: absolute;
+  top:12rem;
+}
+
+@media only screen and (max-width: 1200px) {
+.content-booking-absolute {
+    top: 9rem;
+  }
 }
