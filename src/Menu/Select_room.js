@@ -18,7 +18,7 @@ export default function App() {
             <div class="col-3 pe-5">
                 <div class="bg-white shadow rounded-top-4">
                     <div class="py-4 px-3 mb-2 bg-light rounded-top-4">
-                        <div class="d-flex align-items-center"><img src="img_dormitory/imageStudent/01.jpg" alt="image" className="mr-3 profile shadow-sm rounded-3" />
+                        <div class="d-flex align-items-center"><img src="img_dormitory/imageStudent/01.jpg" alt="image" className="mr-3 profile-student shadow-sm rounded-3" />
                         <div class="ms-3">
                             <div class="d-inline-flex fs-5 m-0 me-2">สตางค์</div>
                             <div class="d-inline-flex fs-5 m-0">บุตรสัย</div>

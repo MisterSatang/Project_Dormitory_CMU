@@ -338,7 +338,7 @@ body {
 .text-gray-600 {
   color: rgb(141, 141, 141) !important;
 }
-.profile{
+.profile-student{
   width: 4rem;
   object-fit: cover;
 }
