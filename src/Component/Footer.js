@@ -50,11 +50,17 @@ export default function Footer() {
                 </div>
 
                 <div class="bg-dark-150 py-1">
-                    <div class="container text-center">
-                        <p class="text-muted mb-0 py-2">สำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่</p>
+                    <div class="container-foot text-center">
+                        <p class="pb-0 text-muted mb-0 py-2">สำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่</p>
                     </div>
                 </div>
             </footer>
         </>
     );
+
+
+
+
+
+    
 }

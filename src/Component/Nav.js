@@ -3,8 +3,8 @@ import React from 'react';
 export default function Navbar() {
     return (
         <>
-            <div className="container fixed-top border-0 rounded-4 bg-white shadow mt-2">
-                <nav className="navbar navbar-expand-lg ">
+            <div className="container fixed-top border-0 rounded-pill bg-white shadow mt-2 ">
+                <nav className="navbar navbar-expand-lg">
                     <div className="container-fluid">
                         <a className="navbar-brand" href="#"><div className="text-purple fs-5 fw-bold">หอพักนักศึกษา CMU</div></a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,7 +14,7 @@ export default function Navbar() {
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
                                     <a className="nav-link active" aria-current="page" href="#">
-                                        <i class="bi bi-book me-1"></i>ข่าวสาร</a>
+                                        <i class="bi bi-house me-1"></i>หน้าหลัก</a>
                                 </li>
                                 <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -123,10 +123,10 @@ export default function Navbar() {
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#"><i class="bi bi-map me-1"></i>แผนที่</a>
+                                    <a className="nav-link" href="https://udo.oop.cmu.ac.th/page-expenses"><i class="bi bi-coin me-1"></i>ราคาหอพัก</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link disabled">Coming Soon</a>
+                                    <a className="nav-link" href="#"><i class="bi bi-map me-1"></i>แผนที่</a>
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-outline-primary">
