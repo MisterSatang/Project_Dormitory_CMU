@@ -11,7 +11,7 @@
 }
 
 .text-purple {
-  color: #6f42c1;
+  color: #6f42c1 !important;
 }
 
 .text-glay {
@@ -128,6 +128,47 @@ footer {
   width: 100%;
   object-fit: cover;
 }
-.rounded-top-4{
-  border-radius:1em 1em 0em 0em;
+.rounded-r-4{
+  border-radius:0em 1em 1em 0em;
+}
+.rounded-top-4 {
+  border-radius:1em 1em 0em 0em !important;
+}
+.rounded-ts-4 {
+  border-radius: 0em 1em 0em 0em !important;
+}
+.rounded-room {
+  border-radius: 0em 0.7em 0em 10em !important;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.text-uppercase {
+  letter-spacing: 0.1em;
+}
+
+.text-gray {
+  color: #aaa;
+}
+.text-gray-600 {
+  color: rgb(141, 141, 141) !important;
+}
+.profile{
+  width: 4rem;
+  object-fit: cover;
+}
+.room{
+  width: 100%;
+  border-radius: 1rem;
+  padding-bottom: 0.7rem;
+}
+.count-room{
+  height: 2em;;
+}
+.bg-dark-100{
+  background: rgb(160, 158, 158);
+  background: rgb(116, 114, 114);
 }
