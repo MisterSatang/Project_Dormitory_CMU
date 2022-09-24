@@ -11,7 +11,7 @@ export default function App() {
     < Navbar />
 
     <div class="d-flex">
-        <img src="img_dormitory/Select_room/10.jpg" alt="Bg-cmu" className="w-100 image-bg-select_room" />
+        <img src="img_dormitory/Select_room/11.jpg" alt="Bg-cmu" className="w-100 image-bg-select_room" />
     </div>
     <div class="container-fluid p-0">
         <div class="row mt-4 ms-4">
