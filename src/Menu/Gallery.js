@@ -12,7 +12,7 @@ export default function Gallery() {
                     <p>Hover or focus over each card to see the person’s job title slide in and the colour treatment change.</p>
                 </div>
                 <div className="team col-12">
-                    <ul className="auto-grid" role="list">
+                    <ul className=" auto-grid" role="list">
                         <li>
                             <a href="https://swop.link/cool" target="_blank&quot;" className="profile">
                                 <h2 className="profile__name">01</h2>
@@ -52,9 +52,10 @@ export default function Gallery() {
                             <a href="https://swop.link/cool" target="_blank&quot;" className="profile">
                                 <h2 className="profile__name">06</h2>
                                 <p>Founder</p>
-                                <img alt="Anita Simmons" src="img_dormitory/Female/F_dormitory1/7.jpg" />
+                                <img alt="Anita Simmons" src="img_dormitory/Female/F_dormitory1/6.jpg" />
                             </a>
                         </li>
+                        
                     </ul>
                 </div>
             </div>
