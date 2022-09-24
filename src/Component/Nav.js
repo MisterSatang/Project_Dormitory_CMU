@@ -123,6 +123,9 @@ export default function Navbar() {
                                     </ul>
                                 </li>
                                 <li className="nav-item">
+                                    <a className="nav-link" href="https://udo.oop.cmu.ac.th/page-expenses"><i class="bi bi-coin me-1"></i>ราคาหอพัก</a>
+                                </li>
+                                <li className="nav-item">
                                     <a className="nav-link" href="#"><i class="bi bi-map me-1"></i>แผนที่</a>
                                 </li>
                             </ul>

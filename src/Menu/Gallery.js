@@ -9,7 +9,7 @@ export default function Gallery() {
             <div className='col-12 p-0 m-0'>
                 <div class="flow row col-12 mg101">
                     <h1>รูปภาพหอพักนักศึกษามหาวิทยาลัยเชียงใหม่</h1>
-                    <p>Hover or focus over each card to see the person’s job title slide in and the colour treatment change.</p>
+                    <p>หอพักนักศึกษาหญิง อาคาร 1 </p>
                 </div>
                 <div className="team col-12">
                     <ul className=" auto-grid" role="list">
