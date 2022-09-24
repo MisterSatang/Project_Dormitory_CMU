@@ -30,13 +30,16 @@
   color: #ffffff !important;
   font-weight: 400;
 }
-.btn-primary{
+
+.btn-primary {
   background: #6f42c1 !important;
   border: 0 !important;
 }
+
 .btn-primary:hover {
   background: #5b36a1 !important;
 }
+
 .marjin15 {
   margin-top: 6rem;
 }
@@ -74,6 +77,55 @@
   height: 18rem;
   width: 100%;
   object-fit: cover;
+}
+
+.hight-news {
+  /* height: 26rem; */
+  max-height: 22rem;
+  object-fit: cover;
+}
+
+.hight-photo-news {
+  /* height: 26rem; */
+  max-height: 4rem;
+}
+
+.new-color {
+  background-color: #f1f1f1;
+}
+
+.new-text-color {
+  color: #3c3c3c;
+}
+
+.new-text-color-p {
+  color: #6f42c1;
+}
+
+.h-news:hover {
+  color: #a686e2;
+}
+
+.new-solit {
+  border-top: solid 1px black;
+}
+
+.new-br {
+  border-radius: 20px;
+}
+
+.new-shdow {
+  box-shadow: 5px 5px 10px #b2b2b2;
+}
+
+
+
+.circle {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgb(255, 255, 255);
+  border: solid 2px #6f42c1;
+  border-radius: 100%;
 }
 
 a:hover,
@@ -114,13 +166,14 @@ footer {
 .bg-dark-150 {
   background-color: #00000030;
 }
-.content-booking-absolute{
+
+.content-booking-absolute {
   position: absolute;
-  top:12rem;
+  top: 12rem;
 }
 
 @media only screen and (max-width: 1200px) {
-.content-booking-absolute {
+  .content-booking-absolute {
     top: 9rem;
   }
 }
