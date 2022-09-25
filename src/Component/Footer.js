@@ -7,10 +7,7 @@ export default function Footer() {
                 <div class=" container pt-3 pb-1">
                     <div class="row py-3">
                         <div class="col-lg-4 col-md-6 mb-lg-0"><img src="https://www.cmu.ac.th/content/images/logo_footer.png" alt width={330} className="mb-3" />
-
-
                             <p class="font-italic text-white-50 fw-light">ที่อยู่ : สำนักงานหอพักนักศึกษา อาคาร 7239 ถนนห้วยแก้ว ต.สุเทพ อ.เมือง จ.เชียงใหม่ 50200</p>
-
                         </div>
                         <div class=" col-lg-4 col-md-12  mb-lg-0">
                             <div class="container m-0 p-0">
