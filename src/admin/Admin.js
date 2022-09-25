@@ -14,22 +14,22 @@ export default function Admin() {
                                 <ul className="nav flex-column">
                                     <li className="nav-item">
                                         <a className="nav-link active" aria-current="page" href="#">
-                                        <i class="bi bi-house me-2"></i><span className="me-1">หน้าหลัก</span>
+                                            <i class="bi bi-house me-2"></i><span className="me-1">หน้าหลัก</span>
                                         </a>
                                     </li>
                                     <li className="nav-item">
                                         <a className="nav-link" href="#">
-                                        <i class="bi bi-plus-circle me-2"></i><span className="ml-2">เพิ่มห้องพัก</span>
+                                            <i class="bi bi-plus-circle me-2"></i><span className="ml-2">เพิ่มห้องพัก</span>
                                         </a>
                                     </li>
                                     <li className="nav-item">
                                         <a className="nav-link" href="#">
-                                        <i class="bi bi-pencil-square me-2"></i><span className="ml-2">แก้ไขห้องพัก</span>
+                                            <i class="bi bi-pencil-square me-2"></i><span className="ml-2">แก้ไขห้องพัก</span>
                                         </a>
                                     </li>
                                     <li className="nav-item">
                                         <a className="nav-link" href="#">
-                                        <i class="bi bi-trash3 me-2"></i><span className="ml-2">ลบห้องพัก</span>
+                                            <i class="bi bi-trash3 me-2"></i><span className="ml-2">ลบห้องพัก</span>
                                         </a>
                                     </li>
                                     <li className="nav-item">
