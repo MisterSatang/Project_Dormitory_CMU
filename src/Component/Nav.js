@@ -3,7 +3,7 @@ import React from 'react';
 export default function Navbar() {
     return (
         <>
-            <div className="container fixed-top border-0 rounded-pill bg-white shadow mt-2 ">
+            <div className="container fixed-top border-0 rounded-4 bg-white shadow mt-2">
                 <nav className="navbar navbar-expand-lg">
                     <div className="container-fluid">
                         <a className="navbar-brand" href="#"><div className="text-purple fs-5 fw-bold">หอพักนักศึกษา CMU</div></a>

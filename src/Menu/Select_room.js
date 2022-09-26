@@ -14,8 +14,8 @@ export default function App() {
         <img src="img_dormitory/Select_room/11.jpg" alt="Bg-cmu" className="w-100 image-bg-select_room" />
     </div>
     <div class="container-fluid p-0">
-        <div class="row mt-4 ms-4">
-            <div class="col-xl-3 col-lg-4 col-md-5 col-12 pe-4 ps-0">
+        <div class="row mt-4 mx-4">
+            <div class="col-xl-3 col-lg-4 col-md-5 col-12 col-sm-6 pe-4 ps-0">
                 <div class="bg-white shadow rounded-top-4">
                     <div class="pt-4 px-3  bg-light rounded-top-4 border-bottom border-1 border-3">
                         <div class="d-flex align-items-center"><img src="img_dormitory/imageStudent/01.jpg" alt="image" className="mr-3 profile-student shadow-sm rounded-3" />
@@ -58,9 +58,8 @@ export default function App() {
                 </ul>
                 </div>
             </div>
-            <div class="col">
-              <div class="container-fluid p-0">
-                <div class="row">
+            <div class="col p-0">
+                <div class="row m-0">
                   <Select_room />
                   <Select_room_full />
                   <Select_room />
@@ -70,7 +69,6 @@ export default function App() {
                   <Select_room />
                   <Select_room />
                 </div>
-              </div>
             </div>
         </div>
     </div>
