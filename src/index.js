@@ -15,10 +15,12 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Admin from './admin/Admin';
 
+import Testback from './Menu/Testback'
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <News />
+    <Testback />
   </React.StrictMode>
 );
 
