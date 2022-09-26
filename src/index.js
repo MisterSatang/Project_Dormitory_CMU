@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './admin/addmin.css';
 import Home from './Menu/Home';
 import Map from './Menu/Map';
 import News from './Menu/News';
 import Booking from './Menu/Booking';
 import Select_room from './Menu/Select_room';
+import Login from './admin/Login';
 
 import reportWebVitals from './reportWebVitals';
 import Gallery from './Menu/Gallery';
@@ -18,7 +20,7 @@ import Admin from './admin/Admin';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Admin />
+    <Login />
   </React.StrictMode>
 );
 
