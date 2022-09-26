@@ -129,8 +129,9 @@ export default function Navbar() {
                                     <a className="nav-link" href="#"><i class="bi bi-map me-1"></i>แผนที่</a>
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-outline-primary">
-                                <i class="bi bi-pen me-1"></i>จองห้อง</button>
+                            {/* <button type="button" class={`btn btn-outline-primary ${isAvailableReserve ? '' : 'btn-disabled'}`}> isAvailableReserve
+                                <i class="bi bi-pen me-1"></i>จองห้อง
+                            </button> */}
                         </div>
                     </div>
                 </nav>
@@ -139,4 +140,4 @@ export default function Navbar() {
     );
 }
                                   
-
+// GET /admin/settings    => { isAvailable: true, a: true }

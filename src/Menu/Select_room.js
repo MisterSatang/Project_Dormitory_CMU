@@ -15,9 +15,9 @@ export default function App() {
     </div>
     <div class="container-fluid p-0">
         <div class="row mt-4 ms-4">
-            <div class="col-3 pe-5">
+            <div class="col-xl-3 col-lg-4 col-md-5 col-12 pe-4 ps-0">
                 <div class="bg-white shadow rounded-top-4">
-                    <div class="py-4 px-3 mb-2 bg-light rounded-top-4">
+                    <div class="pt-4 px-3  bg-light rounded-top-4 border-bottom border-1 border-3">
                         <div class="d-flex align-items-center"><img src="img_dormitory/imageStudent/01.jpg" alt="image" className="mr-3 profile-student shadow-sm rounded-3" />
                         <div class="ms-3">
                             <div class="d-inline-flex fs-5 m-0 me-2">สตางค์</div>
@@ -26,7 +26,12 @@ export default function App() {
                             <div class="font-weight-light text-muted mb-0">สาขา DII</div>
                         </div>
                         </div>
+                        <div class="py-3 text-center text-gray">
+                          ไม่มีการจองห้องพัก
+                        </div>
                     </div>
+                  
+
                 <div class="p-1 bg-light rounded-r-4 shadow-sm mb-4">
                   <div class="input-group">
                   <input type="search" placeholder="ค้นหา : หมายเลขห้อง ?" aria-describedby="button-addon1" class="form-control border-0 bg-light" />
@@ -54,8 +59,8 @@ export default function App() {
                 </div>
             </div>
             <div class="col">
-              <div class="container-fluid">
-                <div class="row gap-3">
+              <div class="container-fluid p-0">
+                <div class="row">
                   <Select_room />
                   <Select_room_full />
                   <Select_room />
