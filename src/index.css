@@ -81,7 +81,7 @@
 
 .hight-news {
   /* height: 26rem; */
-  max-height: 22rem;
+  height: 10rem;
   object-fit: cover;
 }
 
@@ -267,6 +267,7 @@ a {
   text-decoration: none;
   overflow: hidden;
 }
+
 @media (max-width: 986px) {
   .roundedResponNavbar {
     border-radius: 0em !important;
@@ -422,8 +423,9 @@ body {
   width: 100%;
   border-radius: 1rem;
   padding-bottom: 0.7rem;
-  margin-top:1.5rem;
+  margin-top: 1.5rem;
 }
+
 @media (max-width: 575px) {
   .room {
     width: 95%;
