@@ -2,6 +2,8 @@ import React from 'react';
 import Navbar from '../Component/Nav';
 import Footer from '../Component/Footer';
 
+
+
 export default function Gallery() {
     return (
         <>
