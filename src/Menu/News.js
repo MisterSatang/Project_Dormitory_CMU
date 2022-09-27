@@ -19,22 +19,88 @@ export default function App() {
                         <div className="mb-4 alert-trim rounded p-2 fs-3 new-text-color ">ติดตามข่าวสาร</div>
                         <div className="row justify-content-center">
 
-                            {/* card */}
-                            <div className="row m-4 new-color pt-4 pb-4 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5 align-items-center">
-                                <div className="col-4">
-                                    <div className="fs-1 container-fluid new-text-color-p text-center text-center">14</div>
-                                    <div className="fs-5 container-fluid new-text-color text-center">กันยายน</div>
-                                </div>
-
-                                <div className="col-8 justify-content-center mb-3">
-                                    <div className="col-12 container-fluid ">
-                                        <img src="img_dormitory/News/cmu3.jpg" className="d-block w-100 rounded hight-news" alt="..." />
+                            {/* card 1*/}
+                            <div className="row m-4 new-color pt-4 pb-4 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5 ">
+                                <div className="row align-items-center hight-news mb-4">
+                                    <div className="col-4">
+                                        <div className="fs-1 container-fluid new-text-color-p text-center text-center">14</div>
+                                        <div className="fs-5 container-fluid new-text-color text-center">กันยายน</div>
+                                    </div>
+                                    <div className="col-8 justify-content-center mb-3">
+                                        <div className="col-12 container-fluid ">
+                                            <img src="img_dormitory/News/cmu3.jpg" className="d-block w-100 rounded hight-news" alt="..." />
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div className="col-12 ">
+                                <div className="col-12 row">
                                     <div className='container-fluid fs-6 new-text-color text-justify'>
                                         ประกาศ สำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง กำหนดปิดหอพักนักศึกษา ภาคการศึกษาที่ 1 ปีการศึกษา 2565 และกำหนดเปิดหอพักนักศึกษา ภาคการศึกษาที่ 2 ปีการศึกษา 2565
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* card 2*/}
+                            <div className="row m-4 new-color pt-4 pb-4 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5 ">
+                                <div className="row align-items-center hight-news mb-4">
+                                    <div className="col-4">
+                                        <div className="fs-1 container-fluid new-text-color-p text-center text-center">7</div>
+                                        <div className="fs-5 container-fluid new-text-color text-center">กันยายน</div>
+                                    </div>
+                                    <div className="col-8 justify-content-center mb-3">
+                                        <div className="col-12 container-fluid ">
+                                            <img src="img_dormitory/News/news22.jpg" className="d-block w-100 rounded hight-news" alt="..." />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="col-12 row">
+                                    <div className='container-fluid fs-6 new-text-color text-justify'>
+                                        ประกาศสำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง การรับสมัครนักศึกษาเข้าร่วมโครงการทุนทำดี ฟรีค่าหอ ประจำภาคเรียนที่ 2 ปีการศึกษา 2565
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* card 3*/}
+                            <div className="row m-4 new-color pt-4 pb-4 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5 ">
+                                <div className="row align-items-center hight-news mb-4">
+                                    <div className="col-4">
+                                        <div className="fs-1 container-fluid new-text-color-p text-center text-center">4</div>
+                                        <div className="fs-5 container-fluid new-text-color text-center">พฤษภาคม</div>
+                                    </div>
+                                    <div className="col-8 justify-content-center mb-3">
+                                        <div className="col-12 container-fluid ">
+                                            <img src="img_dormitory/News/news23.jpg" className="d-block w-100 rounded hight-news" alt="..." />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="col-12 row">
+                                    <div className='container-fluid fs-6 new-text-color text-justify'>
+                                        ประกาศ สำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง การคืนเงินค่าบำรุงหอพักร้อยละ 10
+                                        สำหรับนักศึกษาที่พักอาศัยในหอพักนักศึกษา ประจำภาคการศึกษาที่ 3 ปีการศึกษา 2564 กรณี
+                                        นักศึกษายื่นคำขอ ในระหว่างวันที่ 10 พฤษภาคม - 3 มิถุนายน 2565 และเพิ่มเติมจนถึงวันที่ 24 มิถุนายน 2565
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* card 4*/}
+                            <div className="row m-4 new-color pt-4 pb-4 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5 ">
+                                <div className="row align-items-center hight-news mb-4">
+                                    <div className="col-4">
+                                        <div className="fs-1 container-fluid new-text-color-p text-center text-center">2</div>
+                                        <div className="fs-5 container-fluid new-text-color text-center">พฤษภาคม</div>
+                                    </div>
+                                    <div className="col-8 justify-content-center mb-3">
+                                        <div className="col-12 container-fluid ">
+                                            <img src="img_dormitory/News/news24.jpg" className="d-block w-100 rounded hight-news" alt="..." />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="col-12 row">
+                                    <div className='container-fluid fs-6 new-text-color text-justify d-flex align-items-start'>
+                                        ประกาศ สำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง มาตรการในการดูแลนักศึกษาที่พักในหอพักนักศึกษา
                                     </div>
                                 </div>
                             </div>
@@ -99,6 +165,7 @@ export default function App() {
                                         ประกาศ สำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง มาตรการในการดูแลนักศึกษาที่พักในหอพักนักศึกษา
                                     </div>
                                 </div>
+
                             </div>
 
                         </div>
