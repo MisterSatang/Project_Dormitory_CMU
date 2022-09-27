@@ -17,52 +17,52 @@ export default function Gallery() {
                     <div className='col-10'>
                         <ul className="auto-grid " role="list">
                             <li>
-                                <a href="https://swop.link/cool" target="_blank&quot;" className="profile">
+                                <a className="profile">
                                     <h2 className="profile__name">01</h2>
                                     <p >Founder</p>
-                                    <img alt="Anita Simmons" src="img_dormitory/Female/F_dormitory1/2.jpg" />
+                                    <img src="img_dormitory/Female/F_dormitory1/2.jpg" />
                                 </a>
                             </li>
                             <li>
-                                <a href="https://swop.link/cool" target="_blank&quot;" className="profile">
+                                <a className="profile">
                                     <h2 className="profile__name">02</h2>
                                     <p>Founder</p>
-                                    <img alt="Anita Simmons" src="img_dormitory/Female/F_dormitory1/7.jpg" />
+                                    <img src="img_dormitory/Female/F_dormitory1/7.jpg" />
                                 </a>
                             </li>
                             <li>
-                                <a href="https://swop.link/cool" target="_blank&quot;" className="profile">
+                                <a className="profile">
                                     <h2 className="profile__name">03</h2>
                                     <p>Founder</p>
-                                    <img alt="Anita Simmons" src="img_dormitory/Female/F_dormitory1/4.jpg" />
+                                    <img src="img_dormitory/Female/F_dormitory1/4.jpg" />
                                 </a>
                             </li>
                             <li>
-                                <a href="https://swop.link/cool" target="_blank&quot;" className="profile">
+                                <a className="profile">
                                     <h2 className="profile__name">04</h2>
                                     <p>Founder</p>
-                                    <img alt="Anita Simmons" src="img_dormitory/Female/F_dormitory1/5.jpg" />
+                                    <img src="img_dormitory/Female/F_dormitory1/5.jpg" />
                                 </a>
                             </li>
                             <li>
-                                <a href="https://swop.link/cool" target="_blank&quot;" className="profile">
+                                <a className="profile">
                                     <h2 className="profile__name">05</h2>
                                     <p>Founder</p>
-                                    <img alt="Anita Simmons" src="img_dormitory/Female/F_dormitory1/6.jpg" />
+                                    <img src="img_dormitory/Female/F_dormitory1/6.jpg" />
                                 </a>
                             </li>
                             <li>
-                                <a href="https://swop.link/cool" target="_blank&quot;" className="profile">
+                                <a className="profile">
                                     <h2 className="profile__name">04</h2>
                                     <p>Founder</p>
-                                    <img alt="Anita Simmons" src="img_dormitory/Female/F_dormitory1/5.jpg" />
+                                    <img src="img_dormitory/Female/F_dormitory1/5.jpg" />
                                 </a>
                             </li>
                             <li>
-                                <a href="https://swop.link/cool" target="_blank&quot;" className="profile">
+                                <a className="profile">
                                     <h2 className="profile__name">05</h2>
                                     <p>Founder</p>
-                                    <img alt="Anita Simmons" src="img_dormitory/Female/F_dormitory1/6.jpg" />
+                                    <img src="img_dormitory/Female/F_dormitory1/6.jpg" />
                                 </a>
                             </li>
                         </ul>

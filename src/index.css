@@ -269,16 +269,6 @@ a {
   left: 0;
 }
 
-.profile::before {
-  background: linear-gradient(
-    to top,
-    hsl(0 0% 0% / 0.79) 1%,
-    hsl(0 0% 0% / 0.468) 50%,
-    hsl(0 0% 0% / 0.113) 90%,
-    hsl(0 0% 0% / 0) 100%
-  );
-  transition: 300ms opacity linear;
-}
 
 .profile::after {
   
@@ -296,7 +286,6 @@ a {
   position: absolute;
   z-index: -1;
   object-fit: cover;
-  filter: grayscale(1);
   transition: filter 200ms ease, transform 250ms linear;
 }
 

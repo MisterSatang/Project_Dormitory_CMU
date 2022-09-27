@@ -30,7 +30,7 @@ import Slidebar from './admin/Slidebar';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Edit_room />
+    <Gallery />
   </React.StrictMode>
 );
 
