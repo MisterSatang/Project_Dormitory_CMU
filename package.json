@@ -11,6 +11,7 @@
     "bootstrap-icons": "^1.9.1",
     "cors": "^2.8.5",
     "express": "^4.18.1",
+    "focus-trap": "^7.0.0",
     "init": "^0.1.2",
     "morgan": "^1.10.0",
     "react": "^18.2.0",

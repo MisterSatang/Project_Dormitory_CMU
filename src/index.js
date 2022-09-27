@@ -5,6 +5,7 @@ import Home from './Menu/Home';
 import Map from './Menu/Map';
 import News from './Menu/News';
 import Booking from './Menu/Booking';
+import TestLogin from './Menu/testLogin';
 import Select_room from './Menu/Select_room';
 
 import reportWebVitals from './reportWebVitals';
@@ -20,7 +21,7 @@ import Admin from './admin/Admin';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <News />
+    <TestLogin />
   </React.StrictMode>
 );
 
