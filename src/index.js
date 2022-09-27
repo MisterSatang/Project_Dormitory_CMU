@@ -27,6 +27,8 @@ import News from './Menu/News';
 import Select_room from './Menu/Select_room';
 import Slidebar from './admin/Slidebar';
 
+// import Testback from './Menu/Testback'
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -40,6 +42,6 @@ reportWebVitals();
 // axios.get('http://localhost:8000/rooms')
 // // GET /rooms     => rooms  [{ id: 1, buildingNo: '1', roomNo: '5'}];
 // // GET /rooms/:id  { id: 1, buildingNo: '1', roomNo: '5', status: 'Occupied'}
-// // POST /rooms 
+// // POST /rooms
 // // PUT /rooms/:id
 // // DELETE /rooms/:id
