@@ -1,4 +1,4 @@
-import { Routes, Route , NavLink } from 'react-router-dom';
+import { Routes, Route, NavLink } from 'react-router-dom';
 import React from 'react';
 
 // Addmin
@@ -11,6 +11,7 @@ import De_building from './admin/De_building';
 import De_room from './admin/De_room';
 import Slidebar from './admin/Slidebar';
 import Admin_home from './admin/Admin_home';
+import Add_testFateBack from './admin/testFateBack';
 
 //menu
 import Home from './Menu/Home';
@@ -29,7 +30,7 @@ export default function App() {
       <Route path='/Login' element={<Login_user />} />
       <Route path='/Booking' element={<Booking />} />
       <Route path='/Gallery' element={<Gallery />} />
-      
+
       {/* page admin */}
       <Route path='/Admin' element={<Login_admin />} />
       <Route path='/Admin/Slidebar' element={<Slidebar />} />
@@ -40,6 +41,7 @@ export default function App() {
       <Route path='/Admin/De_building' element={<De_building />} />
       <Route path='/Admin/De_room' element={<De_room />} />
       <Route path='/Admin/Admin_home' element={<Admin_home />} />
+      <Route path='/Admin/testFateBack' element={<Add_testFateBack />} />
     </Routes>
   );
 }
