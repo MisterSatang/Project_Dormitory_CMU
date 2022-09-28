@@ -19,7 +19,8 @@ import Map from './Menu/Map';
 import Login_user from './Menu/Login';
 import Gallery from './Menu/Gallery';
 import Booking from './Menu/Booking';
-
+import Price_male from './Menu/Price_male';
+import Price_female from './Menu/Price_female';
 
 export default function App() {
   const addStyle = ({ isActive }) => isActive ? 'active' : '';
@@ -30,6 +31,8 @@ export default function App() {
       <Route path='/Login' element={<Login_user />} />
       <Route path='/Booking' element={<Booking />} />
       <Route path='/Gallery' element={<Gallery />} />
+      <Route path='/Price_male' element={<Price_male />} />
+      <Route path='/Price_female' element={<Price_female />} />
 
       {/* page admin */}
       <Route path='/Admin' element={<Login_admin />} />
