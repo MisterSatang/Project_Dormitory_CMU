@@ -1,98 +1,78 @@
 import Navbar from '../Component/Nav';
 import Footer from '../Component/Footer';
+import Item_dropdown_filter from '../Component/Item_dropdown_filter';
+import Select_room from '../Component/Select_room';
+import Select_room_full from '../Component/Select_room_full';
 
-import React, { useRef, useState, useEffect } from 'react';
-import axios from 'axios';
 
 export default function App() {
-  const userRef = useRef();
-  const errRef = useRef();
-
-  const [user, setUser] = useState('');
-  const [pwd, setPwd] = useState('');
-  const [errMsg, setErrMsg] = useState('');
-  const [success, setSuccess] = useState(false);
-
-  useEffect(() => {
-    setErrMsg('');
-  }, [user, pwd])
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    console.log(user, pwd);
-    setUser('');
-    setPwd('');
-    setSuccess(true);
-  }
-
   return (
     <>
-      {success ? (
-        <section>
-          <h1>in</h1>
-          <p>
-            <a href='#'>go home</a>
-          </p>
-        </section>
-      ) : (
-        <section>
-          {/* < Navbar /> */}
-          <p nef={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
-          <div onSubmit={handleSubmit}>
-            <div class="d-flex position-relative">
-              <img src="https://elearning.cmu.ac.th/pluginfile.php/1/theme_space/sliderimage1/1654502497/20597668_10213765367385655_1137600657_o%20%283%29.jpg" alt="Bg-cmu" className="w-100 image-containner" />
-            </div>
-            <div class="container-fluid content-booking-absolute">
-              <div class="row">
-                <div class="col-1"></div>
-                <div class="col-10 p-xl-4 px-xl-5 p-1 pt-4 bg-white shadow rounded-4">
-                  <div class="row">
-                    <div class="text-center fs-4 fw-bold">จองหอพัก นักศึกษามหาลัยเชียงใหม่</div>
-                  </div>
-                  <div class="row m-3">
+    < Navbar />
 
-                    <div class="col-xl-5 col-12 ">
-                      <div class="d-flex h-2 mb-1">
-                        Email Address
-                      </div>
-                      <input
-                        type="text"
-                        id="username"
-                        ref={userRef}
-                        autoComplete='off'
-                        onChange={(e) => setUser(e.target.value)}
-                        class="form-control"
-                        value={user}
-                        required
-                        placeholder="Email@cmu.ac.th" />
+    <div class="d-flex">
+        <img src="img_dormitory/Select_room/11.jpg" alt="Bg-cmu" className="w-100 image-bg-select_room" />
+    </div>
+    <div class="container-fluid p-0">
+        <div class="row mt-4 mx-4">
+            <div class="col-xl-3 col-lg-4 col-md-5 col-12 col-sm-6 pe-4 ps-0">
+                <div class="bg-white shadow rounded-top-4">
+                    <div class="pt-4 px-3  bg-light rounded-top-4 border-bottom border-1 border-3">
+                        <div class="d-flex align-items-center"><img src="img_dormitory/imageStudent/01.jpg" alt="image" className="mr-3 profile-student shadow-sm rounded-3" />
+                        <div class="ms-3">
+                            <div class="d-inline-flex fs-5 m-0 me-2">สตางค์</div>
+                            <div class="d-inline-flex fs-5 m-0">บุตรสัย</div>
+                            <div class="font-weight-light text-muted mb-0">คณะ ศิลปะ สื่อ เทคโนโลยี</div>
+                            <div class="font-weight-light text-muted mb-0">สาขา DII</div>
+                        </div>
+                        </div>
+                        <div class="py-3 text-center text-gray">
+                          ไม่มีการจองห้องพัก
+                        </div>
                     </div>
-                    <div class="col-xl-5 col-12">
-                      <div class="d-flex h-2 mb-1">
-                        Password
-                      </div>
-                      <input
-                        type="password"
-                        id="password"
-                        onChange={(e) => setPwd(e.target.value)}
-                        value={pwd}
-                        required
-                        class="form-control"
-                        placeholder="Password" />
-                    </div>
-                    <div class="col-xl-2 col-12">
-                      <div class="d-flex h-2 mb-1"></div>
-                      <button type="button" class="btn btn-primary w-100 rounded-pill">Confirm</button>
+                  
+
+                <div class="p-1 bg-light rounded-r-4 shadow-sm mb-4">
+                  <div class="input-group">
+                  <input type="search" placeholder="ค้นหา : หมายเลขห้อง ?" aria-describedby="button-addon1" class="form-control border-0 bg-light" />
+                    <div class="input-group-append">
+                      <button id="button-addon1" type="submit" class="btn btn-link text-dark"><i class="bi bi-search"></i></button>
                     </div>
                   </div>
                 </div>
-                <div class="col-12"></div>
-              </div>
-            </div>
-          </div>
+                <p class="text-gray font-weight-bold text-uppercase px-3 small pb-3 mb-0"><i class="bi bi-funnel me-1"></i>Filter</p>
 
-          < Footer />
-        </section>
-      )}
+                <ul class="nav flex-column bg-light mb-0 px-4 py-3 rounded-ts-4">
+                    <li class="nav-item">
+                      <div class="mb-1">หอพัก</div>
+                      <Item_dropdown_filter />
+                    </li>
+                    <li class="nav-item">
+                      <div class="mb-1">ชั้น</div>
+                      <Item_dropdown_filter />
+                    </li>
+                    <li class="nav-item">
+                      <div class="mb-1">จำนวนคนว่าง</div>
+                      <Item_dropdown_filter />
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class="col p-0">
+                <div class="row m-0">
+                  <Select_room />
+                  <Select_room_full />
+                  <Select_room />
+                  <Select_room />
+                  <Select_room_full />
+                  <Select_room />
+                  <Select_room />
+                  <Select_room />
+                </div>
+            </div>
+        </div>
+    </div>
+      < Footer />
     </>
   );
 }

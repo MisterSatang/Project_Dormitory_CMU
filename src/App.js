@@ -14,9 +14,9 @@ import De_building from './admin/De_building';
 //menu
 import Home from './Menu/Home';
 import Map from './Menu/Map';
-import Booking from './Menu/Booking';
+import Login_user from './Menu/Login';
 import Gallery from './Menu/Gallery';
-import Select_room from './Menu/Select_room';
+import Booking from './Menu/Booking';
 import Slidebar from './admin/Slidebar';
 
 export default function App() {
@@ -25,9 +25,9 @@ export default function App() {
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/Map' element={<Map />} />
+      <Route path='/Login' element={<Login_user />} />
       <Route path='/Booking' element={<Booking />} />
       <Route path='/Gallery' element={<Gallery />} />
-      <Route path='/Select_room' element={<Select_room />} />
       <Route path='/Slidebar' element={<Slidebar />} />
       <Route path='/Admin' element={<Admin />} />
       <Route path='/Add_building' element={<Add_building />} />
