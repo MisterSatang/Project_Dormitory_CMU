@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 
 import './index.css';
+import './admin/addmin.css';
 
 //bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';

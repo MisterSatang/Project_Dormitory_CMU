@@ -21,13 +21,7 @@ const Login = () => {
         e.preventDefault();
         console.log(user, pwd);
 
-        if (students.password) {
-            alert("Login Successful");
 
-        }
-        else {
-            alert("checkpassword");
-        }
 
         setUser('');
         setPwd('');
@@ -38,7 +32,7 @@ const Login = () => {
         const getStudents = async () => {
             const result = await axios.get('http://localhost:8000/students/');
             setStudents(result.data);
-            console.log('1');
+            console.log(students);
         };
         getStudents();
         console.log('2');

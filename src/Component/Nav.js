@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from "axios";
 
-import {Link,NavLink} from 'react-router-dom';
+import {Link} from 'react-router-dom';
+
+
 
 export default function Navbar() {
+
+    const [settings, setSettings] = useState([]);
+    useEffect(() => {
+        const getSettings = async () => {
+            const result = await axios.get('http://localhost:8000/adminSettings');
+            setSettings(result.data);
+        };
+    getSettings();
+    }, []);
+    
     return (
         <>
             <div className="container fixed-top border-0 rounded-4 bg-white shadow mt-2">
@@ -72,9 +85,9 @@ export default function Navbar() {
                                     <Link to="/Map" className="nav-link" href="#"><i class="bi bi-map me-1"></i>แผนที่</Link>
                                 </li>
                             </ul>
-                            {/* <button type="button" class={`btn btn-outline-primary ${isAvailableReserve ? '' : 'btn-disabled'}`}> isAvailableReserve
-                                <i class="bi bi-pen me-1"></i>จองห้อง
-                            </button> */}
+                            <Link to="/Login" type="button" class="btn btn-outline-primary"  disabled={settings.disableReserve}> 
+                                <i class="bi bi-pen me-1"></i>{settings.disableReserve?"ไม่สามารถจองได้":"จองห้องพัก"}
+                            </Link>
                         </div>
                     </div>
                 </nav>
@@ -82,5 +95,5 @@ export default function Navbar() {
         </>
     );
 }
-
+//  ${settings.isAvailableReserve ? '' : 'btn-disabled'}
 // GET /admin/settings    => { isAvailable: true, a: true }
