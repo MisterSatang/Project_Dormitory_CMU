@@ -1,5 +1,6 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+
+import {Link,NavLink} from 'react-router-dom';
 
 export default function Navbar() {
     return (
@@ -14,7 +15,7 @@ export default function Navbar() {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <Link to="/" className="nav-link active" aria-current="page" href="#">
+                                    <Link to="/" className="nav-link" aria-current="page" href="#" >
                                         <i class="bi bi-house me-1"></i>หน้าหลัก
                                     </Link>
                                 </li>
@@ -128,7 +129,7 @@ export default function Navbar() {
                                     <a className="nav-link" href="https://udo.oop.cmu.ac.th/page-expenses"><i class="bi bi-coin me-1"></i>ราคาหอพัก</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#"><i class="bi bi-map me-1"></i>แผนที่</a>
+                                    <Link to="/Map" className="nav-link" href="#"><i class="bi bi-map me-1"></i>แผนที่</Link>
                                 </li>
                             </ul>
                             {/* <button type="button" class={`btn btn-outline-primary ${isAvailableReserve ? '' : 'btn-disabled'}`}> isAvailableReserve

@@ -7,14 +7,14 @@ export default function Home() {
             <Navbar />
             <div className="row justify-content-center">
                 {/* photo */}
-                <div id="" class="pb-4 p-0 m-0 container-fluid">
-                    <img src="https://elearning.cmu.ac.th/pluginfile.php/1/theme_space/sliderimage1/1654502497/20597668_10213765367385655_1137600657_o%20%283%29.jpg" className="w-100 hight-news" />
-
+                <div id="" class="pb-4 p-0 m-0 container-fluid ">
+                    <img src="https://elearning.cmu.ac.th/pluginfile.php/1/theme_space/sliderimage1/1654502497/20597668_10213765367385655_1137600657_o%20%283%29.jpg" className="w-100 hight-top-photo"></img>
                 </div>
             </div>
             <div className="container-fluid p-0 m-0 pt-4 ">
                 <div className="row mb-4">
                     <div className="col-1"></div>
+
                     <div className="col-10">
                         <div className="mb-4 alert-trim rounded p-2 fs-3 new-text-color ">ติดตามข่าวสาร</div>
                         <div className="row justify-content-center">
@@ -26,13 +26,92 @@ export default function Home() {
                                             <div className="fs-1 d-flex-fit text-center align-items-center new-text-color-p text-center text-center ">14</div>
                                             <div className="fs-5 d-flex-fit text-center align-items-center new-text-color text-center">กันยายน</div>
                                         </div>
-                                        <div class="col"> 
+                                        <div class="col">
                                             <img src="img_dormitory/News/cmu3.jpg" className="rounded card-news" alt="card-news" />
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div className='container-fluid fs-6 new-text-color text-justify'>
-                                        ประกาศสำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง การรับสมัครนักศึกษาเข้าร่วมโครงการทุนทำดี ฟรีค่าหอ ประจำภาคเรียนที่ 2 ปีการศึกษา 2565
+                                            ประกาศสำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง การรับสมัครนักศึกษาเข้าร่วมโครงการทุนทำดี ฟรีค่าหอ ประจำภาคเรียนที่ 2 ปีการศึกษา 2565
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-12 my-4">
+                                <div class="container-fluid bg-light p-4 rounded-4 shadow h-100">
+                                    <div class="row align-items-center pb-3">
+                                        <div class="col-4">
+                                            <div className="fs-1 d-flex-fit text-center align-items-center new-text-color-p text-center text-center ">7</div>
+                                            <div className="fs-5 d-flex-fit text-center align-items-center new-text-color text-center">กันยายน</div>
+                                        </div>
+                                        <div class="col">
+                                            <img src="img_dormitory/News/news1.jpg" className="rounded card-news" alt="..." />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div className='container-fluid fs-6 new-text-color text-justify'>
+                                            ประกาศสำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง การรับสมัครนักศึกษาเข้าร่วมโครงการทุนทำดี ฟรีค่าหอ ประจำภาคเรียนที่ 2 ปีการศึกษา 2565
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-12 my-4">
+                                <div class="container-fluid bg-light p-4 rounded-4 shadow h-100">
+                                    <div class="row align-items-center pb-3">
+                                        <div class="col-4">
+                                            <div className="fs-1 d-flex-fit text-center align-items-center new-text-color-p text-center text-center ">4</div>
+                                            <div className="fs-5 d-flex-fit text-center align-items-center new-text-color text-center">มิถุนายน</div>
+                                        </div>
+                                        <div class="col">
+                                            <img src="img_dormitory/News/news2.jpg" className="rounded card-news" alt="..." />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div className='container-fluid fs-6 new-text-color text-justify'>
+                                            ประกาศ สำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง การคืนเงินค่าบำรุงหอพักร้อยละ 10
+                                            สำหรับนักศึกษาที่พักในหอพักนักศึกษา ประจำภาคการศึกษาที่ 3 ปีการศึกษา 2564 กรณี
+                                            นักศึกษายื่นคำขอ ในภายวันที่ 10มิถุนายน 2565
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-12 my-4">
+                                <div class="container-fluid bg-light p-4 rounded-4 shadow h-100">
+                                    <div class="row align-items-center pb-3">
+                                        <div class="col-4">
+                                            <div className="fs-1 d-flex-fit text-center align-items-center new-text-color-p text-center text-center ">5</div>
+                                            <div className="fs-5 d-flex-fit text-center align-items-center new-text-color text-center">พฤษภาคม</div>
+                                        </div>
+                                        <div class="col">
+                                            <img src="img_dormitory/News/news3.jpg" className="rounded card-news" alt="..." />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div className='container-fluid fs-6 new-text-color text-justify'>
+                                            ประกาศ สำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง การเปลี่ยนแปลงวันรายงานตัวเข้าหอพักนักศึกษา ประจำภาคเรียนที่ 1 ปีการศึกษา 2565
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-12 my-4">
+                                <div class="container-fluid bg-light p-4 rounded-4 shadow h-100">
+                                    <div class="row align-items-center pb-3">
+                                        <div class="col-4">
+                                            <div className="fs-1 d-flex-fit text-center align-items-center new-text-color-p text-center text-center ">10</div>
+                                            <div className="fs-5 d-flex-fit text-center align-items-center new-text-color text-center">พฤษภาคม</div>
+                                        </div>
+                                        <div class="col">
+                                            <img src="img_dormitory/News/news4.jpg" className="rounded card-news" alt="..." />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div className='container-fluid fs-6 new-text-color text-justify'>
+                                            ประกาศ มหาวิทยาลัยเชียงใหม่ เรื่อง การเปลี่ยนแปลงวันรับสมัครนักศึกษาชั้นปีที่ 1 เข้าพักในหอพักนักศึกษาของมหาวิทยาลัยเชียงใหม่
+                                            TCAS รอบที่ 2 แบบที่ 2 โควตา Quota ประจำภาคเรียนที่ 1 ปีการศึกษา 2565
                                         </div>
                                     </div>
                                 </div>
@@ -41,18 +120,17 @@ export default function Home() {
                                 <div class="container-fluid bg-light p-4 rounded-4 shadow h-100">
                                     <div class="row align-items-center pb-3">
                                         <div class="col-4">
-                                            <div className="fs-1 d-flex-fit text-center align-items-center new-text-color-p text-center text-center ">14</div>
-                                            <div className="fs-5 d-flex-fit text-center align-items-center new-text-color text-center">กันยายน</div>
+                                            <div className="fs-1 d-flex-fit text-center align-items-center new-text-color-p text-center text-center ">9</div>
+                                            <div className="fs-5 d-flex-fit text-center align-items-center new-text-color text-center">พฤษภาคม</div>
                                         </div>
-                                        <div class="col"> 
-                                            <img src="img_dormitory/News/news23.jpg" className="rounded card-news" alt="..." />
+                                        <div class="col">
+                                            <img src="img_dormitory/News/news5.jpg" className="rounded card-news" alt="..." />
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div className='container-fluid fs-6 new-text-color text-justify'>
-                                        ประกาศ สำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง การคืนเงินค่าบำรุงหอพักร้อยละ 10
-                                        สำหรับนักศึกษาที่พักอาศัยในหอพักนักศึกษา ประจำภาคการศึกษาที่ 3 ปีการศึกษา 2564 กรณี
-                                        นักศึกษายื่นคำขอ ในระหว่างวันที่ 10 พฤษภาคม - 3 มิถุนายน 2565 และเพิ่มเติมจนถึงวันที่ 24 มิถุนายน 2565
+                                            ประกาศ สำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง กำหนดปิดหอพักนักศึกษา ประจำภาคเรียนฤดูร้อน ปีการศึกษา 2564
+                                            และกำหนดเปิดหอพักนักศึกษา ประจำภาคเรียนที่ 1 ปีการศึกษา 2565
                                         </div>
                                     </div>
                                 </div>
@@ -61,192 +139,21 @@ export default function Home() {
                                 <div class="container-fluid bg-light p-4 rounded-4 shadow h-100">
                                     <div class="row align-items-center pb-3">
                                         <div class="col-4">
-                                            <div className="fs-1 d-flex-fit text-center align-items-center new-text-color-p text-center text-center ">14</div>
-                                            <div className="fs-5 d-flex-fit text-center align-items-center new-text-color text-center">กันยายน</div>
+                                            <div className="fs-1 d-flex-fit text-center align-items-center new-text-color-p text-center text-center ">29</div>
+                                            <div className="fs-5 d-flex-fit text-center align-items-center new-text-color text-center">เมษายน</div>
                                         </div>
-                                        <div class="col"> 
-                                            <img src="img_dormitory/News/news23.jpg" className="rounded card-news" alt="..." />
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div className='container-fluid fs-6 new-text-color text-justify'>
-                                        ประกาศ สำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง การคืนเงินค่าบำรุงหอพักร้อยละ 10
-                                        สำหรับนักศึกษาที่พักอาศัยในหอพักนักศึกษา ประจำภาคการศึกษาที่ 3 ปีการศึกษา 2564 กรณี
-                                        นักศึกษายื่นคำขอ ในระหว่างวันที่ 10 พฤษภาคม - 3 มิถุนายน 2565 และเพิ่มเติมจนถึงวันที่ 24 มิถุนายน 2565
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><div class="col-xl-3 col-lg-4 col-md-6 col-12 my-4">
-                                <div class="container-fluid bg-light p-4 rounded-4 shadow h-100">
-                                    <div class="row align-items-center pb-3">
-                                        <div class="col-4">
-                                            <div className="fs-1 d-flex-fit text-center align-items-center new-text-color-p text-center text-center ">14</div>
-                                            <div className="fs-5 d-flex-fit text-center align-items-center new-text-color text-center">กันยายน</div>
-                                        </div>
-                                        <div class="col"> 
-                                            <img src="img_dormitory/News/news23.jpg" className="rounded card-news" alt="..." />
+                                        <div class="col">
+                                            <img src="img_dormitory/News/news6.jpg" className="rounded card-news" alt="..." />
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div className='container-fluid fs-6 new-text-color text-justify'>
-                                        ประกาศ สำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง การคืนเงินค่าบำรุงหอพักร้อยละ 10
-                                        สำหรับนักศึกษาที่พักอาศัยในหอพักนักศึกษา ประจำภาคการศึกษาที่ 3 ปีการศึกษา 2564 กรณี
-                                        นักศึกษายื่นคำขอ ในระหว่างวันที่ 10 พฤษภาคม - 3 มิถุนายน 2565 และเพิ่มเติมจนถึงวันที่ 24 มิถุนายน 2565
+                                            ประกาศ สำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง การรับสมัครนักศึกษาเข้าพักในหอพักนักศึกษาหญิง อาคาร 10 (หอพัก 40 ปี) ประจำภาคเรียนที่ 1 ปีการศึกษา 2565 (เพิ่มเติม)
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
                             {/* //TODO end-cards */}
-                            {/* card 1*/}
-                            <div className="row m-4 new-color pt-4 pb-4 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5 ">
-                                <div className="row align-items-center hight-news mb-4">
-                                    <div className="col-4">
-                                        
-                                    </div>
-                                    <div className="col-8 justify-content-center mb-3">
-                                        <div className="col-12 container-fluid ">
-                                            <img src="img_dormitory/News/news23.jpg" className="d-block w-100 rounded hight-news" alt="..." />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col-12 row">
-                                    <div className='container-fluid fs-6 new-text-color text-justify'>
-                                        ประกาศ สำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง การคืนเงินค่าบำรุงหอพักร้อยละ 10
-                                        สำหรับนักศึกษาที่พักอาศัยในหอพักนักศึกษา ประจำภาคการศึกษาที่ 3 ปีการศึกษา 2564 กรณี
-                                        นักศึกษายื่นคำขอ ในระหว่างวันที่ 10 พฤษภาคม - 3 มิถุนายน 2565 และเพิ่มเติมจนถึงวันที่ 24 มิถุนายน 2565
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* card 2*/}
-                            <div className="row m-4 new-color pt-4 pb-4 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5 ">
-                                <div className="row align-items-center hight-news mb-4">
-                                    <div className="col-4">
-                                        <div className="fs-1 container-fluid new-text-color-p text-center text-center">7</div>
-                                        <div className="fs-5 container-fluid new-text-color text-center">กันยายน</div>
-                                    </div>
-                                    <div className="col-8 justify-content-center mb-3">
-                                        <div className="col-12 container-fluid ">
-                                            <img src="img_dormitory/News/news22.jpg" className="d-block w-100 rounded hight-news" alt="..." />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col-12 row">
-                                    <div className='container-fluid fs-6 new-text-color text-justify'>
-                                        ประกาศสำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง การรับสมัครนักศึกษาเข้าร่วมโครงการทุนทำดี ฟรีค่าหอ ประจำภาคเรียนที่ 2 ปีการศึกษา 2565
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* card 3*/}
-                            <div className="row m-4 new-color pt-4 pb-4 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5 ">
-                                <div className="row align-items-center hight-news mb-4">
-                                    <div className="col-4">
-                                        <div className="fs-1 container-fluid new-text-color-p text-center text-center">4</div>
-                                        <div className="fs-5 container-fluid new-text-color text-center">พฤษภาคม</div>
-                                    </div>
-                                    <div className="col-8 justify-content-center mb-3">
-                                        <div className="col-12 container-fluid ">
-                                            <img src="img_dormitory/News/news23.jpg" className="d-block w-100 rounded hight-news" alt="..." />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col-12 row">
-                                    <div className='container-fluid fs-6 new-text-color text-justify'>
-                                        ประกาศ สำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง การคืนเงินค่าบำรุงหอพักร้อยละ 10
-                                        สำหรับนักศึกษาที่พักอาศัยในหอพักนักศึกษา ประจำภาคการศึกษาที่ 3 ปีการศึกษา 2564 กรณี
-                                        นักศึกษายื่นคำขอ ในระหว่างวันที่ 10 พฤษภาคม - 3 มิถุนายน 2565 และเพิ่มเติมจนถึงวันที่ 24 มิถุนายน 2565
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* card 4*/}
-                            <div className="row m-4 new-color pt-4 pb-4 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5 ">
-                                <div className="row align-items-center hight-news mb-4">
-                                    <div className="col-4">
-                                        <div className="fs-1 container-fluid new-text-color-p text-center text-center">2</div>
-                                        <div className="fs-5 container-fluid new-text-color text-center">พฤษภาคม</div>
-                                    </div>
-                                    <div className="col-8 justify-content-center mb-3">
-                                        <div className="col-12 container-fluid ">
-                                            <img src="img_dormitory/News/news24.jpg" className="d-block w-100 rounded hight-news" alt="..." />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col-12 row">
-                                    <div className='container-fluid fs-6 new-text-color text-justify d-flex align-items-start'>
-                                        ประกาศ สำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง มาตรการในการดูแลนักศึกษาที่พักในหอพักนักศึกษา
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* card */}
-                            <div className="row m-4 new-color pt-4 pb-4 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5 align-items-center">
-                                <div className="col-4">
-                                    <div className="fs-1 container-fluid new-text-color-p text-center text-center">7</div>
-                                    <div className="fs-5 container-fluid new-text-color text-center">กันยายน</div>
-                                </div>
-
-                                <div className="col-8 justify-content-center mb-3">
-                                    <div className="col-12 container-fluid ">
-                                        <img src="img_dormitory/News/news22.jpg" className="d-block w-100 rounded hight-news" alt="..." />
-                                    </div>
-                                </div>
-
-                                <div className="col-12 ">
-                                    <div className='container-fluid fs-6 new-text-color text-justify'>
-                                        ประกาศสำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง การรับสมัครนักศึกษาเข้าร่วมโครงการทุนทำดี ฟรีค่าหอ ประจำภาคเรียนที่ 2 ปีการศึกษา 2565
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* card */}
-                            <div className="row m-4 new-color pt-4 pb-4 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5 align-items-center">
-                                <div className="col-4">
-                                    <div className="fs-1 container-fluid new-text-color-p text-center text-center">4</div>
-                                    <div className="fs-5 container-fluid new-text-color text-center">กรกฎาคม</div>
-                                </div>
-
-                                <div className="col-8 justify-content-center mb-3">
-                                    <div className="col-12 container-fluid ">
-                                        <img src="img_dormitory/News/news23.jpg" className="d-block w-100 rounded hight-news" alt="..." />
-                                    </div>
-                                </div>
-
-                                <div className="col-12 ">
-                                    <div className='container-fluid fs-6 new-text-color text-justify'>
-                                        ประกาศ สำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง การคืนเงินค่าบำรุงหอพักร้อยละ 10
-                                        สำหรับนักศึกษาที่พักอาศัยในหอพักนักศึกษา ประจำภาคการศึกษาที่ 3 ปีการศึกษา 2564 กรณี
-                                        นักศึกษายื่นคำขอ ในระหว่างวันที่ 10 พฤษภาคม - 3 มิถุนายน 2565 และเพิ่มเติมจนถึงวันที่ 24 มิถุนายน 2565
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* card */}
-                            <div className="row m-4 new-color pt-4 pb-4 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5 align-items-center">
-                                <div className="col-4 ">
-                                    <div className="fs-1 container-fluid new-text-color-p text-center text-center">2</div>
-                                    <div className="fs-5 container-fluid new-text-color text-center">พฤษภาคม</div>
-                                </div>
-
-                                <div className="col-8 justify-content-center mb-3 ">
-                                    <div className="col-12 container-fluid ">
-                                        <img src="img_dormitory/News/news24.jpg" className="d-block w-100 rounded hight-news" alt="..." />
-                                    </div>
-                                </div>
-
-                                <div className="col-12 ">
-                                    <div className='container-fluid fs-6 new-text-color text-justify'>
-                                        ประกาศ สำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง มาตรการในการดูแลนักศึกษาที่พักในหอพักนักศึกษา
-                                    </div>
-                                </div>
-
-                            </div>
 
                         </div>
                     </div>

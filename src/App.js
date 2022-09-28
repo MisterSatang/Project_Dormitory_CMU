@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route , NavLink } from 'react-router-dom';
 import React from 'react';
 
 // Addmin
@@ -20,6 +20,7 @@ import Select_room from './Menu/Select_room';
 import Slidebar from './admin/Slidebar';
 
 export default function App() {
+  const addStyle = ({ isActive }) => isActive ? 'active' : '';
   return (
     <Routes>
       <Route path='/' element={<Home />} />
