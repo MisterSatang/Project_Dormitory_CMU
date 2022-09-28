@@ -1,5 +1,6 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+
+import {Link,NavLink} from 'react-router-dom';
 
 export default function Navbar() {
     return (
@@ -14,7 +15,7 @@ export default function Navbar() {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <Link to="/" className="nav-link active" aria-current="page" href="#">
+                                    <Link to="/" className="nav-link" aria-current="page" href="#" >
                                         <i class="bi bi-house me-1"></i>หน้าหลัก
                                     </Link>
                                 </li>
@@ -36,22 +37,6 @@ export default function Navbar() {
                                         </li><li>
                                             <a className="dropdown-item d-inline-flex" href="#">หอพักชาย 3
                                                 <div className="ms-2 fs-6 text-glay">: 053-944733</div>
-                                            </a>
-                                        </li><li>
-                                            <a className="dropdown-item d-inline-flex" href="#">หอพักชาย 4
-                                                <div className="ms-2 fs-6 text-glay">: 053-944734</div>
-                                            </a>
-                                        </li><li>
-                                            <a className="dropdown-item d-inline-flex" href="#">หอพักชาย 5
-                                                <div className="ms-2 fs-6 text-glay">: 053-944735</div>
-                                            </a>
-                                        </li><li>
-                                            <a className="dropdown-item d-inline-flex" href="#">หอพักชาย 6
-                                                <div className="ms-2 fs-6 text-glay">: 053-944736</div>
-                                            </a>
-                                        </li><li>
-                                            <a className="dropdown-item d-inline-flex" href="#">หอพักชาย 7
-                                                <div className="ms-2 fs-6 text-glay">: 053-944737</div>
                                             </a>
                                         </li>
                                     </ul>
@@ -77,58 +62,14 @@ export default function Navbar() {
                                                 <div className="ms-2 fs-6 text-glay">: 053-944723</div>
                                             </a>
                                         </li>
-                                        <li>
-                                            <a className="dropdown-item d-inline-flex" href="#">หอพักหญิง 4
-                                                <div className="ms-2 fs-6 text-glay">: 053-944724</div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="dropdown-item d-inline-flex" href="#">หอพักหญิง 5
-                                                <div className="ms-2 fs-6 text-glay">: 053-944725</div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="dropdown-item d-inline-flex" href="#">หอพักหญิง 6
-                                                <div className="ms-2 fs-6 text-glay">: 053-944726</div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="dropdown-item d-inline-flex" href="#">หอพักหญิง 7
-                                                <div className="ms-2 fs-6 text-glay">: 053-944727</div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="dropdown-item d-inline-flex" href="#">หอพักหญิง 8
-                                                <div className="ms-2 fs-6 text-glay">: 053-944728</div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="dropdown-item d-inline-flex" href="#">หอพักหญิง 9
-                                                <div className="ms-2 fs-6 text-glay">: 053-944791</div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="dropdown-item d-inline-flex" href="#">หอพักหญิง 10
-                                                <div className="ms-2 fs-6 text-glay">: 053-944773</div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="dropdown-item d-inline-flex" href="#">หอพักหญิง 11
-                                                <div className="ms-2 fs-6 text-glay">: 053-944709</div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="dropdown-item d-inline-flex" href="#">หอพักหญิง 12
-                                                <div className="ms-2 fs-6 text-glay">: 053-944710</div>
-                                            </a>
-                                        </li>
+
                                     </ul>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="https://udo.oop.cmu.ac.th/page-expenses"><i class="bi bi-coin me-1"></i>ราคาหอพัก</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#"><i class="bi bi-map me-1"></i>แผนที่</a>
+                                    <Link to="/Map" className="nav-link" href="#"><i class="bi bi-map me-1"></i>แผนที่</Link>
                                 </li>
                             </ul>
                             {/* <button type="button" class={`btn btn-outline-primary ${isAvailableReserve ? '' : 'btn-disabled'}`}> isAvailableReserve
@@ -141,5 +82,5 @@ export default function Navbar() {
         </>
     );
 }
-                                  
+
 // GET /admin/settings    => { isAvailable: true, a: true }
