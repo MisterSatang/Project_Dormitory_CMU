@@ -9,24 +9,25 @@ const Dormitories = () => {
     useEffect(() => {
         function postDormitories() {
             axios.post("http://localhost:8000/dormitories", {
-                buildingNo: 4,
-                floor: 4,
-                sex: "4",
-                name: "4",
-                tel: "4",
+                "buildingNo": 5,
+                "floor": 5,
+                "sex": "5",
+                "name": "5",
+                "tel": "5"
             })
                 .then((response) => {
                     setpostDor(response.data);
                 })
         }
+        postDormitories();
 
         function putDormitories() {
             axios.put("http://localhost:8000/dormitories/4", {
-                buildingNo: 4,
-                floor: 4,
-                sex: "4",
-                name: "4",
-                tel: "4",
+                buildingNo: 3,
+                floor: 3,
+                sex: "3",
+                name: "3",
+                tel: "3",
             })
         }
 
@@ -36,7 +37,6 @@ const Dormitories = () => {
                 setpostDor(null);
             }))
         }
-
     })
 
     useEffect(() => {
@@ -65,11 +65,16 @@ const Dormitories = () => {
                 setpostRoom(null);
             }))
         }
-    })
+    }, [])
 
     if (!postDor) return "No post Dor";
     if (!postRoom) return "No post Room";
 
+    return (
+        <>
+
+        </>
+    );
 
     // useEffect(() => {
     //     const getdormitories = async () => {
