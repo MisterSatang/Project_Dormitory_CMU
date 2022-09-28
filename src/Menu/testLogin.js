@@ -9,6 +9,9 @@ const Login = () => {
     const [pwd, setPwd] = useState('');
     const [errMsg, setErrMsg] = useState('');
     const [success, setSuccess] = useState(false);
+    const [students, setStudents] = useState([]);
+
+
 
     useEffect(() => {
         setErrMsg('');
@@ -17,52 +20,70 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log(user, pwd);
+
+        if (students.password) {
+            alert("Login Successful");
+
+        }
+        else {
+            alert("checkpassword");
+        }
+
         setUser('');
         setPwd('');
-        setSuccess(true);
+        // setSuccess(true);
     }
+
+    useEffect(() => {
+        const getStudents = async () => {
+            const result = await axios.get('http://localhost:8000/students/');
+            setStudents(result.data);
+            console.log('1');
+        };
+        getStudents();
+        console.log('2');
+    }, []);
 
     return (
         <>
-            {
-                success ? (
-                    <section>
-                        <h1>in</h1>
-                        <p>
-                            <a href='#'>go home</a>
-                        </p>
-                    </section>
-                ) : (
-                    <section>
-                        <p nef={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
-                        <h1>Sing In</h1>
-                        <from onSubmit={handleSubmit}>
-                            <label htmlFor='username'>username</label>
-                            <input
-                                type="text"
-                                id="username"
-                                ref={userRef}
-                                autoComplete='off'
-                                onChange={(e) => setUser(e.target.value)}
-                                class="form-control"
-                                value={user}
-                                required
-                                placeholder="Email@cmu.ac.th"
-                            />
+            {success ? (
+                <section>
+                    <h1>in</h1>
+                    <br />
+                    <p>
+                        <a href='http://localhost:3000/TestLogin'>go home</a>
+                    </p>
+                </section>
+            ) : (
+                <section>
+                    <p nef={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
+                    <h1>Sing In</h1>
 
-                            <label htmlFor="password">password:</label>
-                            <input
-                                type="password"
-                                id="password"
-                                onChange={(e) => setPwd(e.target.value)}
-                                value={pwd}
-                                required
-                                placeholder="password"
-                            />
-                            <button>Sign In</button>
-                        </from>
-                    </section>
-                )
+                    <label htmlFor='username'>username</label>
+                    <input
+                        type="text"
+                        id="username"
+                        ref={userRef}
+                        autoComplete='off'
+                        onChange={(e) => setUser(e.target.value)}
+                        className="form-control"
+                        value={user}
+                        required
+                    />
+
+                    <label htmlFor="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        onChange={(e) => setPwd(e.target.value)}
+                        className="form-control"
+                        value={pwd}
+                        required
+                    />
+                    <button onClick={handleSubmit}>Sign In</button>
+
+                </section>
+            )
             }
         </>
     );

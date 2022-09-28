@@ -18,6 +18,7 @@ import Booking from './Menu/Booking';
 import Gallery from './Menu/Gallery';
 import Select_room from './Menu/Select_room';
 import Slidebar from './admin/Slidebar';
+import TestLogin from './Menu/testLogin'
 
 export default function App() {
   return (
@@ -35,6 +36,7 @@ export default function App() {
       <Route path='/Edit_room' element={<Edit_room />} />
       <Route path='/Login' element={<Login />} />
       <Route path='/De_building' element={<De_building />} />
+      <Route path='/TestLogin' element={<TestLogin />} />
     </Routes>
   );
 }
