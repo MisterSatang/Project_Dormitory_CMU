@@ -13,6 +13,9 @@
 .text-purple {
   color: #6f42c1 !important;
 }
+.text-red{
+  color: red;
+}
 
 .text-glay {
   color: rgb(180, 178, 178);
@@ -466,4 +469,7 @@ body {
 
 ul li {
   list-style: none;
+}
+.joinBtn:active {
+  background-color: #a686e2;
 }

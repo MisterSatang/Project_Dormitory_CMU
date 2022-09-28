@@ -5,7 +5,7 @@ import React from 'react';
 export default function Add_room() {
     return (
         <>
-            <div className='container-fluid p-0'>
+            <div className='container-fluid p-0 bg-lights'>
                 <div className='row'>
                     <Slidebar />
                     <div className='col-6'>
@@ -30,12 +30,6 @@ export default function Add_room() {
 
 
                                     <div>
-                                        <div class="mb-3">
-                                            <label for="formFile" class="form-label">เพิ่มรูปภาพ</label>
-                                            <input class="form-control" type="file" id="formFile" />
-                                        </div>
-
-
                                     </div>
                                     <button type="submit" className="text-center btn btn-primary mt-4">Submit</button>
 
