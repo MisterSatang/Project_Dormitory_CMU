@@ -62,9 +62,16 @@
   .test{
     z-index: 100 !important;
   }
-  .bg-admin{
-    background-color: #b08eef;
-  }
   .text-color{
-    color: rgb(255, 255, 255);
+    color: #b08eef;
   }
+  .h_admin{
+    height: 5rem;
+  }
+  .text-lights{
+    color: #dad7d7 !important;
+  } 
+  .bg-lights{
+    background-color: #f8f4f4 !important;
+  } 
+  

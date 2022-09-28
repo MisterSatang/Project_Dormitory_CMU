@@ -39,16 +39,16 @@ export default function Navbar() {
                                     </a>
                                     <ul className="dropdown-menu">
                                         <li>
-                                            <a className="dropdown-item d-inline-flex" href="#">หอพักชาย 1
+                                            <a className="joinBtn dropdown-item d-inline-flex" href="#">หอพักชาย 1
                                                 <div className="ms-2 fs-6 text-glay">: 053-944711</div>
                                             </a>
                                         </li>
                                         <li>
-                                            <a className="dropdown-item d-inline-flex" href="#">หอพักชาย 2
+                                            <a className="joinBtn dropdown-item d-inline-flex" href="#">หอพักชาย 2
                                                 <div className="ms-2 fs-6 text-glay">: 053-944712</div>
                                             </a>
                                         </li><li>
-                                            <a className="dropdown-item d-inline-flex" href="#">หอพักชาย 3
+                                            <a className="joinBtn dropdown-item d-inline-flex" href="#">หอพักชาย 3
                                                 <div className="ms-2 fs-6 text-glay">: 053-944733</div>
                                             </a>
                                         </li>
@@ -61,12 +61,12 @@ export default function Navbar() {
                                     </a>
                                     <ul className="dropdown-menu">
                                         <li>
-                                            <a className="dropdown-item d-inline-flex" href="#">หอพักหญิง 1
+                                            <a className="joinBtn dropdown-item d-inline-flex" href="#">หอพักหญิง 1
                                                 <div className="ms-2 fs-6 text-glay">: 053-944711</div>
                                             </a>
                                         </li>
                                         <li>
-                                            <a className="dropdown-item d-inline-flex" href="#">หอพักหญิง 2
+                                            <a className="joinBtn dropdown-item d-inline-flex" href="#">หอพักหญิง 2
                                                 <div className="ms-2 fs-6 text-glay">: 053-944722</div>
                                             </a>
                                         </li>
@@ -78,8 +78,21 @@ export default function Navbar() {
 
                                     </ul>
                                 </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="https://udo.oop.cmu.ac.th/page-expenses"><i class="bi bi-coin me-1"></i>ราคาหอพัก</a>
+                                <li className="nav-item dropdown">
+
+                                    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-coin me-1"></i>
+                                        ราคาหอพัก
+                                    </a>
+                                    <ul className="dropdown-menu">
+                                        <li>
+                                            <Link to="/Price_male" className="dropdown-item d-inline-flex" href="#">หอพักชาย</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/Price_female" className="dropdown-item d-inline-flex" href="#">หอพักหญิง</Link>
+                                        </li>
+                       
+                                    </ul>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/Map" className="nav-link" href="#"><i class="bi bi-map me-1"></i>แผนที่</Link>

@@ -5,7 +5,7 @@ import React from 'react';
 export default function Edit_building() {
     return (
         <>
-            <div className='container-fluid p-0'>
+            <div className='container-fluid p-0 bg-lights'>
                 <div className='row'>
                     <Slidebar />
                     <div className='col-6'>

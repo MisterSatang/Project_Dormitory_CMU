@@ -5,7 +5,7 @@ import React from 'react';
 export default function Edit_room() {
     return (
         <>
-            <div className='container-fluid p-0'>
+            <div className='container-fluid p-0 bg-lights'>
                 <div className='row'>
                     <Slidebar />
                     <div className='col-6'>
@@ -32,9 +32,6 @@ export default function Edit_room() {
                                         <label className="form-label">แก้ไขจำนวนเตียง</label>
                                         <input class="form-control" type="text" aria-label="default input example" />
                                     </div>
-
-
-
                                     <button type="submit" className="text-center btn btn-primary mt-3">Submit</button>
 
                                 </div>
