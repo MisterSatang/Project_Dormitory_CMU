@@ -10,7 +10,7 @@ export default function Add_building() {
                     <Slidebar />
                     <div className='col-6'>
                         <div class="row ms-3">
-                            <div class="col-11 text-center m-4"><h4>เพิ่มอาคารหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่</h4></div>
+                            <div class=" text-color col-11 text-center m-4"><h4>เพิ่มอาคารหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่</h4></div>
                             <div class="col-2"></div>
                             <div class="col-8 text-start">
                                 <div classname="col-10 ">

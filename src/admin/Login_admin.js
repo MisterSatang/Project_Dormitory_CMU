@@ -1,5 +1,6 @@
 import React from 'react';
-export default function Login() {
+
+export default function Login_admin() {
     return (
         <>
             <div className="bg-log col-12 d-flex align-items-center ">

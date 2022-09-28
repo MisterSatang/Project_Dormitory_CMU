@@ -1,5 +1,7 @@
 import React from 'react';
 
+import{Link} from 'react-router-dom';
+
 export default function Slidebar() {
     return (
         <>  
@@ -22,13 +24,13 @@ export default function Slidebar() {
                                     </a>
                                     <ul className="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                                         <li className="w-100">
-                                            <a href="#" className="nav-link px-0 text-dark">เพิ่มอาคาร</a>
+                                            <Link to="/Admin/Add_building" href="#" className="nav-link px-0 text-dark">เพิ่มอาคาร</Link>
                                         </li>
                                         <li>
-                                            <a href="#" className="nav-link px-0 text-dark">แก้ไขอาคาร</a>
+                                            <Link to="/Admin/Edit_building" href="#" className="nav-link px-0 text-dark">แก้ไขอาคาร</Link>
                                         </li>
                                         <li>
-                                            <a href="#" className="nav-link px-0 text-dark">ลบอาคาร</a>
+                                            <Link to="/Admin/De_building" href="#" className="nav-link px-0 text-dark">ลบอาคาร</Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -37,13 +39,13 @@ export default function Slidebar() {
                                         <i className="fs-5 bi bi-door-open text-dark" /> <span className="ms-1 d-none d-sm-inline text-dark">จัดการห้อง</span></a>
                                     <ul className="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                                     <li className="w-100">
-                                            <a href="#" className="nav-link px-0 text-dark">เพิ่มห้องพัก</a>
+                                            <Link to="/Admin/Add_room" href="#" className="nav-link px-0 text-dark">เพิ่มห้องพัก</Link>
                                         </li>
                                         <li>
-                                            <a href="#" className="nav-link px-0 text-dark">แก้ไขห้องพัก</a>
+                                            <Link to="/Admin/Edit_room" href="#" className="nav-link px-0 text-dark">แก้ไขห้องพัก</Link>
                                         </li>
                                         <li>
-                                            <a href="#" className="nav-link px-0 text-dark">ลบห้องพัก</a>
+                                            <Link to="/Admin/De_room" href="#" className="nav-link px-0 text-dark">ลบห้องพัก</Link>
                                         </li>
                                     </ul>
                                 </li>

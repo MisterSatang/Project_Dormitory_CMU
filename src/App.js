@@ -2,14 +2,15 @@ import { Routes, Route , NavLink } from 'react-router-dom';
 import React from 'react';
 
 // Addmin
-import './admin/addmin.css';
-import Admin from './admin/Add_building';
 import Add_building from './admin/Add_building';
 import Add_room from './admin/Add_room';
 import Edit_building from './admin/Edit_building';
 import Edit_room from './admin/Edit_room';
-import Login from './admin/Login';
+import Login_admin from './admin/Login_admin';
 import De_building from './admin/De_building';
+import De_room from './admin/De_room';
+import Slidebar from './admin/Slidebar';
+import Admin_home from './admin/Admin_home';
 
 //menu
 import Home from './Menu/Home';
@@ -17,7 +18,8 @@ import Map from './Menu/Map';
 import Booking from './Menu/Booking';
 import Gallery from './Menu/Gallery';
 import Select_room from './Menu/Select_room';
-import Slidebar from './admin/Slidebar';
+
+
 
 export default function App() {
   const addStyle = ({ isActive }) => isActive ? 'active' : '';
@@ -28,14 +30,18 @@ export default function App() {
       <Route path='/Booking' element={<Booking />} />
       <Route path='/Gallery' element={<Gallery />} />
       <Route path='/Select_room' element={<Select_room />} />
-      <Route path='/Slidebar' element={<Slidebar />} />
-      <Route path='/Admin' element={<Admin />} />
-      <Route path='/Add_building' element={<Add_building />} />
-      <Route path='/Add_room' element={<Add_room />} />
-      <Route path='/Edit_building' element={<Edit_building />} />
-      <Route path='/Edit_room' element={<Edit_room />} />
-      <Route path='/Login' element={<Login />} />
-      <Route path='/De_building' element={<De_building />} />
+      
+
+      {/* page admin */}
+      <Route path='/Admin' element={<Login_admin />} />
+      <Route path='/Admin/Slidebar' element={<Slidebar />} />
+      <Route path='/Admin/Add_building' element={<Add_building />} />
+      <Route path='/Admin/Add_room' element={<Add_room />} />
+      <Route path='/Admin/Edit_building' element={<Edit_building />} />
+      <Route path='/Admin/Edit_room' element={<Edit_room />} />
+      <Route path='/Admin/De_building' element={<De_building />} />
+      <Route path='/Admin/De_room' element={<De_room />} />
+      <Route path='/Admin/Admin_home' element={<Admin_home />} />
     </Routes>
   );
 }
