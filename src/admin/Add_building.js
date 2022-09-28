@@ -54,13 +54,6 @@ export default function Add_building() {
                                         <option value="1" onClick={(e) => setSex(e.target.value)} id="man">หอพักชาย</option>
                                         <option value="2" onClick={(e) => setSex(e.target.value)} id="woman">หอพักหญิง</option>
                                     </select>
-                                    <div>
-                                        <div class="mb-3">
-                                            <label for="formFile" class="form-label">เพิ่มรูปภาพ</label>
-                                            <input class="form-control" type="file" id="formFile" />
-                                        </div>
-
-                                    </div>
                                     <button type="submit" className="text-center btn btn-primary mt-4" onClick="postDormitories()" >Submit</button>
 
                                 </div>

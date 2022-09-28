@@ -28,15 +28,6 @@ export default function Add_room() {
                                         <input class="form-control" type="text" placeholder="เช่น 125" aria-label="default input example" />
                                     </div>
 
-
-                                    <div>
-                                        <div class="mb-3">
-                                            <label for="formFile" class="form-label">เพิ่มรูปภาพ</label>
-                                            <input class="form-control" type="file" id="formFile" />
-                                        </div>
-
-
-                                    </div>
                                     <button type="submit" className="text-center btn btn-primary mt-4">Submit</button>
 
                                 </div>
