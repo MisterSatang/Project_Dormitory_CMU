@@ -2,7 +2,7 @@ export default function Item_dropdown_filter() {
   return (
     <>
       <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="room bg-purple shadow">
+                    <div class="room bg-purple shadow card-room">
                       <div class="container-fluid">
                         <div class="row">
                           <div class="col"></div>

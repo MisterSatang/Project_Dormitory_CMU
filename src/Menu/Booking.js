@@ -1,11 +1,39 @@
+import React, { useState, useEffect} from 'react';
+import axios from 'axios';
+
 import Navbar from '../Component/Nav';
 import Footer from '../Component/Footer';
-import Item_dropdown_filter from '../Component/Item_dropdown_filter';
+import FilterSexBuilding from '../Component/FilterSexBuilding';
+import FilterFloorBuilding from '../Component/FilterFloorBuilding';
+import FilterEmptyPeople from '../Component/FilterEmptyPeople';
 import Select_room from '../Component/Select_room';
 import Select_room_full from '../Component/Select_room_full';
 
-
 export default function App() {
+
+  const [dormitories, setDormitories] = useState([]);
+
+  const [sexBuilding, setSexBuilding] = useState([]);
+  const [floorBuilding, setFloorBuilding] = useState([]);
+  const [EmptyPeople, setEmptyPeople] = useState([]);
+
+  // console.log(sexBuilding)
+  // console.log(floorBuilding)
+  // console.log(EmptyPeople)
+
+  useEffect(() =>{
+      async function getDormitories() {
+        try {
+          const dormitory = await axios.get('http://localhost:8000/dormitories');
+          console.log(dormitory.data);
+          setDormitories(dormitory.data);
+        } catch (error) {
+          console.error(error);
+        }
+      }
+      getDormitories();
+  },[]);
+
   return (
     <>
     < Navbar />
@@ -45,15 +73,15 @@ export default function App() {
                 <ul class="nav flex-column bg-light mb-0 px-4 py-3 rounded-ts-4">
                     <li class="nav-item">
                       <div class="mb-1">หอพัก</div>
-                      <Item_dropdown_filter />
+                  <FilterSexBuilding setSexBuilding={setSexBuilding} dormitories={dormitories} />
                     </li>
                     <li class="nav-item">
                       <div class="mb-1">ชั้น</div>
-                      <Item_dropdown_filter />
+                      <FilterFloorBuilding setFloorBuilding={setFloorBuilding} />
                     </li>
                     <li class="nav-item">
                       <div class="mb-1">จำนวนคนว่าง</div>
-                      <Item_dropdown_filter />
+                      <FilterEmptyPeople setEmptyPeople={setEmptyPeople}/>
                     </li>
                 </ul>
                 </div>

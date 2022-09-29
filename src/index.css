@@ -467,6 +467,8 @@ body {
 ul li {
   list-style: none;
 }
-.text-non{
-  text-decoration: none;
+
+.card-room:hover{
+  background: #4c2790 !important;
+  
 }
