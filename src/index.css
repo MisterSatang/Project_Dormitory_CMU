@@ -421,6 +421,7 @@ body {
   border-radius: 1rem;
   padding-bottom: 0.7rem;
   margin-top: 1.5rem;
+  border: 0;
 }
 
 @media (max-width: 575px) {
@@ -434,8 +435,10 @@ body {
 }
 
 .bg-dark-100 {
-  background: rgb(160, 158, 158);
   background: rgb(116, 114, 114);
+}
+.text-dark-100 {
+  color: rgb(116, 114, 114);
 }
 
 .sidebar {
@@ -469,6 +472,5 @@ ul li {
 }
 
 .card-room:hover{
-  background: #4c2790 !important;
-  
+  background: #4c2790 !important; 
 }
