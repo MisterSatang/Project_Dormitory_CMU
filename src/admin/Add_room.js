@@ -5,7 +5,7 @@ import React from 'react';
 export default function Add_room() {
     return (
         <>
-            <div className='container-fluid p-0'>
+            <div className='container-fluid p-0 bg-admin'>
                 <div className='row'>
                     <Slidebar />
                     <div className='col-6'>

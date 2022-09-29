@@ -36,7 +36,6 @@ export default function Price_female() {
                     </div>
                 </div>
             </div>
-
             < Footer />
         </>
     );

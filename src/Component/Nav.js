@@ -79,7 +79,7 @@ export default function Navbar() {
                                     </ul>
                                 </li>
 
-                                    <Link to="/Admin/Price" className="nav-link" aria-current="page" href="#" >
+                                    <Link to="/Price" className="nav-link" aria-current="page" href="#" >
                                         <i class="bi bi-coin me-1"></i>
                                         ราคาหอพัก
                                     </Link>
