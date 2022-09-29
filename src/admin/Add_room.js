@@ -1,46 +1,89 @@
 import Slidebar from './Slidebar';
+import React, { useRef, useState, useEffect } from 'react';
+import axios from 'axios';
 
-
-import React from 'react';
 export default function Add_room() {
+    const [numroom, setNunroom] = useState('');
+    const [people, setPeople] = useState('');
+    const [floor, setFloor] = useState('');
+    const [buil, setBuil] = useState('');
+
+    const [dormitories, setDormitories] = useState([]);
+
+    useEffect(() => {
+        const getdormitories = async () => {
+            const result = await axios.get('http://localhost:8000/dormitories/');
+            console.log(result.data)
+            setDormitories(result.data);
+        };
+        getdormitories();
+    }, []);
+
+    const postRoom = (e) => {
+        e.preventDefault();
+        axios.post("http://localhost:8000/dormitories", {
+            "roomNo": numroom,
+            "floor": floor,
+            "nummax": people,
+        })
+            .then((response) => {
+                console.log(response);
+            }).catch((error) => {
+                console.log(error);
+            })
+    }
+
     return (
         <>
-            <div className='container-fluid p-0'>
-                <div className='row'>
-                    <Slidebar />
-                    <div className='col-6'>
-                        <div class="row ms-3">
-                            <div class="col-11 text-center m-4"><h4>เพิ่มห้องพักหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่</h4></div>
-                            <div class="col-2"></div>
-                            <div class="col-8 text-start">
-                                <div classname="col-10 ">
-                                    <label className="form-label">อาคารที่ต้องการเพิ่มห้อง</label>
-                                    <select className="mb-4 form-select" aria-label="เลือกอาคาร">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                    </select>
-                                    <div className="mb-3">
-                                        <label className="form-label">เลขตึก</label>
-                                        <input class="form-control" type="text" placeholder="เช่น 1" aria-label="default input example" />
-                                    </div>
-                                    <div className="mb-3">
-                                        <label className="form-label">เลขห้อง</label>
-                                        <input class="form-control" type="text" placeholder="เช่น 125" aria-label="default input example" />
-                                    </div>
+            <from onSubmit={postRoom}>
+                <div className='container-fluid p-0'>
+                    <div className='row'>
+                        <Slidebar />
+                        <div className='col-6'>
+                            <div class="row ms-3">
+                                <div class="col-11 text-center m-4"><h4>เพิ่มห้องพักหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่</h4></div>
+                                <div class="col-2"></div>
+                                <div class="col-8 text-start">
+                                    <div classname="col-10 ">
+                                        <label className="form-label">อาคารที่ต้องการเพิ่มห้อง</label>
+                                        <select className="mb-4 form-select" aria-label="เลือกอาคาร" onChange={(e) => setBuil(e.target.value)}>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                        </select>
 
-                                    <button type="submit" className="text-center btn btn-primary mt-4">Submit</button>
+                                        <label className="form-label">จำนวนชั้น</label>
+                                        <select className="mb-4 form-select" aria-label="Default select example" id="numberF loor" onChange={(e) => setFloor(e.target.value)}>
+                                            <option value="1" id="1">1</option>
+                                            <option value="2" id="2">2</option>
+                                            <option value="3" id="3">3</option>
+                                            <option value="4" id="4">4</option>
+                                        </select>
+                                        <div className="mb-3">
+                                            <label className="form-label">เลขห้อง</label>
+                                            <input class="form-control" type="text" placeholder="เช่น 125" aria-label="default input example" onChange={(e) => setNunroom(e.target.value)} />
+                                        </div>
+                                        <label className="form-label">จำนวนคน</label>
+                                        <select className="mb-4 form-select" aria-label="Default select example" id="numberF loor" onChange={(e) => setPeople(e.target.value)}>
+                                            <option value="1" id="1">1</option>
+                                            <option value="2" id="2">2</option>
+                                            <option value="3" id="3">3</option>
+                                            <option value="4" id="4">4</option>
+                                        </select>
 
+                                        <button type="submit" className="text-center btn btn-primary mt-4">Submit</button>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div classname="row ">
-                    <div classname="col-1" />
+                    <div classname="row ">
+                        <div classname="col-1" />
 
+                    </div>
                 </div>
-            </div>
+            </from>
         </>
     );
 }
