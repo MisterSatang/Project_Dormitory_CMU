@@ -1,10 +1,42 @@
 import Slidebar from './Slidebar';
+import React, { useRef, useState, useEffect } from 'react';
+import axios from 'axios';
 
-
-import React from 'react';
 export default function Edit_building() {
+    const [builID, editBuilID] = useState('');
+
+    const [dormitories, setDormitories] = useState([]);
+
+    useEffect(() => {
+        async function getdormitories() {
+            try {
+                const result = await axios.get('http://localhost:8000/dormitories');
+                console.log(result.data)
+                setDormitories(result.data);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+        getdormitories();
+    }, []);
+
+    const editBuilding = (e) => {
+        e.preventDefault();
+        axios.post(`http://localhost:8000/rooms/${builID}`, {
+            // "floor": Number.parseInt(floor),
+            // "roomNo": numroom,
+            // "numMax": Number.parseInt(people)
+        })
+            .then((response) => {
+                console.log(response);
+            }).catch((error) => {
+                console.log(error);
+            })
+    }
+
     return (
         <>
+            <from onSubmit={editBuilding}></from>
             <div className='container-fluid p-0 bg-lights'>
                 <div className='row'>
                     <Slidebar />
@@ -15,9 +47,14 @@ export default function Edit_building() {
                             <div class="col-8 text-start">
                                 <div classname="col-10 ">
                                     <label className="form-label">อาคารที่ต้องการแก้ไข</label>
-                                    <select className="mb-4 form-select" aria-label="เลือกอาคาร">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
+                                    <select className="mb-4 form-select" aria-label="เลือกอาคาร" onChange={(e) => editBuilID(e.target.value)}>
+                                        <option value="" id="">-</option>
+                                        {
+                                            dormitories.map(filteredDormitory => (
+                                                <option key={filteredDormitory.id} value={filteredDormitory.id} id={filteredDormitory.id}>
+                                                    {filteredDormitory.name}
+                                                </option>
+                                            ))}
                                     </select>
                                     <button type="submit" className="text-center btn btn-primary mt-3 mb-4">Submit</button>
                                     <div className="mb-3 border-top border-4 pt-4">

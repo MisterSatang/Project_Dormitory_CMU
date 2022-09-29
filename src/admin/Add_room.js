@@ -11,12 +11,6 @@ export default function Add_room() {
     const [dormitories, setDormitories] = useState([]);
 
     useEffect(() => {
-        // const getdormitories = async () => {
-        //     const result = await axios.get('http://localhost:8000/dormitories');
-        //     console.log(result.data)
-        //     setDormitories(result.data);
-        // };
-        // getdormitories();
         async function getdormitories() {
             try {
                 const result = await axios.get('http://localhost:8000/dormitories');
