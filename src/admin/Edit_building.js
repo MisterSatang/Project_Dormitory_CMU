@@ -3,7 +3,10 @@ import React, { useRef, useState, useEffect } from 'react';
 import axios from 'axios';
 
 export default function Edit_building() {
-    const [builID, editBuilID] = useState('');
+    const [numroom, setNunroom] = useState('');
+    const [people, setPeople] = useState('');
+    const [floor, setFloor] = useState('');
+    const [builID, setBuilID] = useState('');
 
     const [dormitories, setDormitories] = useState([]);
 
@@ -22,10 +25,10 @@ export default function Edit_building() {
 
     const editBuilding = (e) => {
         e.preventDefault();
-        axios.post(`http://localhost:8000/rooms/${builID}`, {
+        axios.post(`http://localhost:8000/dormitories`, {
+            // "buildingNo": Number.parseInt(numBuil),
             // "floor": Number.parseInt(floor),
-            // "roomNo": numroom,
-            // "numMax": Number.parseInt(people)
+            // "name": buil,
         })
             .then((response) => {
                 console.log(response);
@@ -47,7 +50,7 @@ export default function Edit_building() {
                             <div class="col-8 text-start">
                                 <div classname="col-10 ">
                                     <label className="form-label">อาคารที่ต้องการแก้ไข</label>
-                                    <select className="mb-4 form-select" aria-label="เลือกอาคาร" onChange={(e) => editBuilID(e.target.value)}>
+                                    <select className="mb-4 form-select" aria-label="เลือกอาคาร" onChange={(e) => setNunroom(e.target.value)}>
                                         <option value="" id="">-</option>
                                         {
                                             dormitories.map(filteredDormitory => (
