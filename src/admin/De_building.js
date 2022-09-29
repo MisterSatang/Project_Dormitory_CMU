@@ -8,7 +8,7 @@ export default function De_building() {
             <div className='container-fluid p-0 bg-lights'>
                 <div className='row'>
                     <Slidebar />
-                    <div className='col-6'>
+                    <div className='col-9 d-flex justify-content-center'>
                         <div class="row ms-3">
                             <div class="col-11 text-center m-4"><h4>ลบอาคารหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่</h4></div>
                             <div class="col-2"></div>

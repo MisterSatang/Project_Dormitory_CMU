@@ -4,7 +4,7 @@ import Footer from '../Component/Footer';
 import { Link } from 'react-router-dom';
 
 
-export default function Price_female() {
+export default function Price() {
     return (
         <>
             < Navbar />

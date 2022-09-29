@@ -13,7 +13,7 @@ export default function Slidebar() {
                             </a>
                             <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                                 <li className="nav-item">
-                                    <Link to="/Admin_home" href="#" className="nav-link align-middle px-0">
+                                    <Link to="/Admin/Admin_home" href="#" className="nav-link align-middle px-0">
                                         <i className="fs-4 bi-house text-lights" /> <span className="ms-1 d-none d-sm-inline text-lights">Home</span>
                                     </Link>
                                 </li>
