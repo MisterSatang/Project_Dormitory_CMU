@@ -73,5 +73,12 @@
   } 
   .bg-lights{
     background-color: #f8f4f4 !important;
-  } 
+  }
+  .text-red{
+    color: red;
+  }
+  .bg-pp{
+    background-color: rgb(157, 93, 216);
+    border-radius: 10px;
+  }
   

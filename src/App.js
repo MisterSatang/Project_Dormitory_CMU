@@ -21,6 +21,7 @@ import Gallery from './Menu/Gallery';
 import Booking from './Menu/Booking';
 import Price_male from './Menu/Price_male';
 import Price_female from './Menu/Price_female';
+import Price from './Menu/Price';
 
 export default function App() {
   const addStyle = ({ isActive }) => isActive ? 'active' : '';
@@ -45,6 +46,7 @@ export default function App() {
       <Route path='/Admin/De_room' element={<De_room />} />
       <Route path='/Admin/Admin_home' element={<Admin_home />} />
       <Route path='/Admin/testFateBack' element={<Add_testFateBack />} />
+      <Route path='/Admin/Price' element={<Price />} />
     </Routes>
   );
 }

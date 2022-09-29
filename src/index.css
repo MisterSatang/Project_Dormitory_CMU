@@ -467,3 +467,6 @@ body {
 ul li {
   list-style: none;
 }
+.text-non{
+  text-decoration: none;
+}

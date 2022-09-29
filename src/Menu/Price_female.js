@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../Component/Nav';
 import Footer from '../Component/Footer';
-
+import {Link} from 'react-router-dom';
 
 
 export default function Price_female() {
@@ -12,6 +12,15 @@ export default function Price_female() {
                 <div class="flow row col-12 mg101">
                     <h1>ราคาหอพักนักศึกษาหญิงมหาวิทยาลัยเชียงใหม่</h1>
                     <p>Chiang Mai University student dormitory prices</p>
+                </div>
+                <div className="dropdown d-flex justify-content-center">
+                    <button class="btn btn-secondary dropdown-toggle col-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        เลือกหอพักนักศึกษา
+                    </button>
+                    <ul class="dropdown-menu">
+                        <Link to="/Price_male"><button className="dropdown-item " type="button">หอพักนักศึกษาชายมหาวิทยาลัยเชียงใหม่</button></Link>
+                        <Link to="/Price_female"><button className="dropdown-item" type="button">หอพักนักศึกษาหญิงมหาวิทยาลัยเชียงใหม่</button></Link>
+                    </ul>
                 </div>
             </div>
             <div class="container">

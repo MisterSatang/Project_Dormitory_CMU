@@ -78,22 +78,12 @@ export default function Navbar() {
 
                                     </ul>
                                 </li>
-                                <li className="nav-item dropdown">
 
-                                    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <Link to="/Admin/Price" className="nav-link" aria-current="page" href="#" >
                                         <i class="bi bi-coin me-1"></i>
                                         ราคาหอพัก
-                                    </a>
-                                    <ul className="dropdown-menu">
-                                        <li>
-                                            <Link to="/Price_male" className="dropdown-item d-inline-flex" href="#">หอพักชาย</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/Price_female" className="dropdown-item d-inline-flex" href="#">หอพักหญิง</Link>
-                                        </li>
-                       
-                                    </ul>
-                                </li>
+                                    </Link>
+
                                 <li className="nav-item">
                                     <Link to="/Map" className="nav-link" href="#"><i class="bi bi-map me-1"></i>แผนที่</Link>
                                 </li>
