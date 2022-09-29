@@ -13,7 +13,7 @@ export default function Slidebar() {
                             </a>
                             <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                                 <li className="nav-item">
-                                    <Link to="/Admin/Admin_home" href="#" className="nav-link align-middle px-0">
+                                    <Link to="/Admin/Admin_home"  className="nav-link align-middle px-0">
                                         <i className="fs-4 bi-house text-lights" /> <span className="ms-1 d-none d-sm-inline text-lights">Home</span>
                                     </Link>
                                 </li>
@@ -24,43 +24,41 @@ export default function Slidebar() {
                                     </a>
                                     <ul className="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                                         <li className="w-100">
-                                            <Link to="/Admin/Add_building" href="#" className="nav-link px-0 text-lights">เพิ่มอาคาร</Link>
+                                            <Link to="/Admin/Add_building"  className="nav-link px-0 text-lights">เพิ่มอาคาร</Link>
                                         </li>
                                         <li>
-                                            <Link to="/Admin/Edit_building" href="#" className="nav-link px-0 text-lights">แก้ไขอาคาร</Link>
+                                            <Link to="/Admin/Edit_building"  className="nav-link px-0 text-lights">แก้ไขอาคาร</Link>
                                         </li>
                                         <li>
-                                            <Link to="/Admin/De_building" href="#" className="nav-link px-0 text-lights">ลบอาคาร</Link>
+                                            <Link to="/Admin/De_building"  className="nav-link px-0 text-lights">ลบอาคาร</Link>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a href="#submenu2" data-bs-toggle="collapse" className="nav-link px-0 align-middle ">
                                         <i className="fs-4 bi bi-door-open text-lights" /> <span className="ms-1 d-none d-sm-inline text-lights">จัดการห้อง</span></a>
-                                    <ul className="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                                    <ul className="collapse show nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                                     <li className="w-100">
-                                            <Link to="/Admin/Add_room" href="#" className="nav-link px-0 text-lights">เพิ่มห้องพัก</Link>
+                                            <Link to="/Admin/Add_room"  className="nav-link px-0 text-lights">เพิ่มห้องพัก</Link>
                                         </li>
                                         <li>
-                                            <Link to="/Admin/Edit_room" href="#" className="nav-link px-0 text-lights">แก้ไขห้องพัก</Link>
+                                            <Link to="/Admin/Edit_room"  className="nav-link px-0 text-lights">แก้ไขห้องพัก</Link>
                                         </li>
                                         <li>
-                                            <Link to="/Admin/De_room" href="#" className="nav-link px-0 text-lights">ลบห้องพัก</Link>
+                                            <Link to="/Admin/De_room"  className="nav-link px-0 text-lights">ลบห้องพัก</Link>
                                         </li>
                                     </ul>
                                 </li>
-                                
-                              
                             </ul>
                             <hr />
                             <div className="dropdown pb-4">
-                                <a href="#" className="d-flex align-items-center text-lights text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a  className="d-flex align-items-center text-lights text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="bi bi-person"> </i>
                                     <span className="d-none d-sm-inline mx-1">Admin</span>
                                 </a>
                                 <ul className="dropdown-menu dropdown-menu-secondary text-small shadow" aria-labelledby="dropdownUser1">
                                     
-                                    <li><a className="dropdown-item" href="#">Sign out</a></li>
+                                    <li><a className="dropdown-item" >Sign out</a></li>
                                 </ul>
                             </div>
                     </div>

@@ -27,13 +27,13 @@ export default function Price() {
                                     </button>
 
                                     <ul className="dropdown-menu">
-                                        <Link to="/Price_male"><button className="dropdown-item " type="button">หอพักนักศึกษาชายมหาวิทยาลัยเชียงใหม่</button></Link>
-                                        <Link to="/Price_female"><button className="dropdown-item" type="button">หอพักนักศึกษาหญิงมหาวิทยาลัยเชียงใหม่</button></Link>
+                                        <Link to="/Price_male"><button className="joinBtn dropdown-item " type="button">หอพักนักศึกษาชายมหาวิทยาลัยเชียงใหม่</button></Link>
+                                        <Link to="/Price_female"><button className="joinBtn dropdown-item" type="button">หอพักนักศึกษาหญิงมหาวิทยาลัยเชียงใหม่</button></Link>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                 </div>
             </div>
             < Footer />

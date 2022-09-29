@@ -74,10 +74,7 @@
   .text-red{
     color: red;
   }
-  .bg-pp{
-    background-color: rgb(183, 133, 230);
-    border-radius: 10px;
-  }
+
   .form-container{
     background-color: #fff;
     font-family: 'Poppins', sans-serif;

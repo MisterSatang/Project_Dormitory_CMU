@@ -472,3 +472,11 @@ ul li {
   background: #4c2790 !important;
   
 }
+.bg-pp{
+  background-color: rgb(166, 95, 233);
+  border-radius: 10px;
+}
+.joinBtn:active {
+  background-color: #9c6ff1 !important;
+  color: #ffffff !important;
+}

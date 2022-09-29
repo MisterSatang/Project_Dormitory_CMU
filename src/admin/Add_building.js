@@ -56,7 +56,7 @@ export default function Add_building() {
                     <div className='row'>
                         <Slidebar />
                         <div className='col-9 d-flex justify-content-center'>
-                            <div class="row">
+                            <div class="row ms-3">
                                 <div class="col-11 text-center m-4"><h4>เพิ่มอาคารหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่</h4></div>
                                 <div class="col-2"></div>
                                 <div class="col-8 text-start">
