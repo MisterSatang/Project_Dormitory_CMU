@@ -52,12 +52,12 @@ export default function Add_building() {
     return (
         <>
             <from onSubmit={postDormitories}>
-                <div className='container-fluid p-0'>
+                <div className='container-fluid p-0 bg-lights'>
                     <div className='row'>
                         <Slidebar />
                         <div className='col-6'>
                             <div class="row ms-3">
-                                <div class=" text-color col-11 text-center m-4"><h4>เพิ่มอาคารหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่</h4></div>
+                                <div class="col-11 text-center m-4"><h4>เพิ่มอาคารหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่</h4></div>
                                 <div class="col-2"></div>
                                 <div class="col-8 text-start">
                                     <div classname="col-10 ">
