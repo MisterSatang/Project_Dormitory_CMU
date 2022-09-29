@@ -170,7 +170,7 @@ export default function Home() {
                         <div className="mb-1 alert-trim rounded p-2 fs-3 new-text-color ">การรับสมัครเข้าหอพักนักศึกษา</div>
                         {/* cardlink */}
                         <div className='align-items-center row justify-content-center'>
-                            <div className='align-items-center row new-color pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5 '>
+                            <div className='align-items-center row bg-light pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5 '>
                                 <div className='col-3 justify-content-center'>
                                     <div className='justify-content-center '>
                                         <div className="bi bi-cash-coin m-1 fs-1 "></div>
@@ -181,7 +181,7 @@ export default function Home() {
                                 </div>
                             </div>
                             {/* cardlink */}
-                            <div className='align-items-center row  new-color pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5'>
+                            <div className='align-items-center row  bg-light pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5'>
                                 <div className='col-3 justify-content-center'>
                                     <div className='justify-content-center '>
                                         <div className="bi bi-building m-1 fs-1 "></div>
@@ -192,7 +192,7 @@ export default function Home() {
                                 </div>
                             </div>
                             {/* cardlink */}
-                            <div className='align-items-center row  new-color pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5'>
+                            <div className='align-items-center row  bg-light pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5'>
                                 <div className='col-3 justify-content-center'>
                                     <div className='justify-content-center align-items-center'>
                                         <div className="bi bi-book m-1 fs-1 "></div>
@@ -203,7 +203,7 @@ export default function Home() {
                                 </div>
                             </div>
                             {/* cardlink */}
-                            <div className='align-items-center row  new-color pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5'>
+                            <div className='align-items-center row  bg-light pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5'>
                                 <div className='col-3 justify-content-center'>
                                     <div className='justify-content-center align-items-center'>
                                         <div className="bi bi-key m-1 fs-1 "></div>
@@ -214,7 +214,7 @@ export default function Home() {
                                 </div>
                             </div>
                             {/* cardlink */}
-                            <div className='align-items-center row new-color pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5'>
+                            <div className='align-items-center row bg-light pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5'>
                                 <div className='col-3 justify-content-center'>
                                     <div className='  justify-content-center align-items-center'>
                                         <div className="bi bi-pen m-1 fs-1 "></div>
@@ -225,7 +225,7 @@ export default function Home() {
                                 </div>
                             </div>
                             {/* cardlink */}
-                            <div className='align-items-center row new-color pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5'>
+                            <div className='align-items-center row bg-light pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5'>
                                 <div className='col-3 justify-content-center'>
                                     <div className='  justify-content-center align-items-center'>
                                         <div className="bi bi-file-ppt m-1 fs-1 "></div>
@@ -236,7 +236,7 @@ export default function Home() {
                                 </div>
                             </div>
                             {/* cardlink */}
-                            <div className='align-items-center row new-color pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5'>
+                            <div className='align-items-center row bg-light pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5'>
                                 <div className='col-3 justify-content-center'>
                                     <div className='  justify-content-center align-items-center'>
                                         <div className="bi bi-cash m-1 fs-1 "></div>
@@ -247,7 +247,7 @@ export default function Home() {
                                 </div>
                             </div>
                             {/* cardlink */}
-                            <div className='align-items-center row new-color pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5'>
+                            <div className='align-items-center row bg-light pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5'>
                                 <div className='col-3 justify-content-center'>
                                     <div className='  justify-content-center align-items-center'>
                                         <div className="bi bi-people m-1 fs-1 "></div>
@@ -258,7 +258,7 @@ export default function Home() {
                                 </div>
                             </div>
                             {/* cardlink */}
-                            <div className='align-items-center row new-color pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5'>
+                            <div className='align-items-center row bg-light pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5'>
                                 <div className='col-3 justify-content-center'>
                                     <div className='  justify-content-center align-items-center'>
                                         <div className="bi bi-person-circle m-1 fs-1 "></div>
@@ -269,7 +269,7 @@ export default function Home() {
                                 </div>
                             </div>
                             {/* cardlink */}
-                            <div className='align-items-center row new-color pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5'>
+                            <div className='align-items-center row bg-light pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5'>
                                 <div className='col-3 justify-content-center'>
                                     <div className='  justify-content-center align-items-center'>
                                         <div className="bi bi-layout-text-sidebar m-1 fs-1 "></div>
@@ -280,7 +280,7 @@ export default function Home() {
                                 </div>
                             </div>
                             {/* cardlink */}
-                            <div className='align-items-center row new-color pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5'>
+                            <div className='align-items-center row bg-light pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5'>
                                 <div className='col-3 justify-content-center'>
                                     <div className='  justify-content-center align-items-center'>
                                         <div className="bi bi-map m-1 fs-1 "></div>
@@ -291,7 +291,7 @@ export default function Home() {
                                 </div>
                             </div>
                             {/* cardlink */}
-                            <div className='align-items-center row new-color pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5'>
+                            <div className='align-items-center row bg-light pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5'>
                                 <div className='col-3 justify-content-center'>
                                     <div className='  justify-content-center align-items-center'>
                                         <div className="bi bi-chat-square-dots m-1 fs-1 "></div>
@@ -302,7 +302,7 @@ export default function Home() {
                                 </div>
                             </div>
                             {/* cardlink */}
-                            <div className='align-items-center row new-color pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5'>
+                            <div className='align-items-center row bg-light pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5'>
                                 <div className='col-3 justify-content-center'>
                                     <div className='  justify-content-center align-items-center'>
                                         <div className="bi bi-globe m-1 fs-1 "></div>
