@@ -1,5 +1,6 @@
 import Navbar from '../Component/Nav';
 import Footer from '../Component/Footer';
+import {Link} from 'react-router-dom';
 
 export default function Home() {
     return (
@@ -243,7 +244,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className='col-9 justify-content-center'>
-                                    <a className='h-news new-text-color-p' href='https://udo.oop.cmu.ac.th/page-expenses'>ค่าใช้จ่ายในการเข้าพัก</a>
+                                    <Link to="/Price" className='h-news new-text-color-p'>ค่าใช้จ่ายในการเข้าพัก</Link>
                                 </div>
                             </div>
                             {/* cardlink */}
@@ -265,7 +266,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className='col-9 justify-content-center'>
-                                    <a className='h-news new-text-color-p' href='https://udo.oop.cmu.ac.th/page-reporting'>การรายงานตัวเข้าหอพัก</a>
+                                    <Link to="" className='h-news new-text-color-p'>การรายงานตัวเข้าหอพัก</Link>
                                 </div>
                             </div>
                             {/* cardlink */}

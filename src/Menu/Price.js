@@ -4,7 +4,7 @@ import Footer from '../Component/Footer';
 import { Link } from 'react-router-dom';
 
 
-export default function Price_female() {
+export default function Price() {
     return (
         <>
             < Navbar />
@@ -27,16 +27,15 @@ export default function Price_female() {
                                     </button>
 
                                     <ul className="dropdown-menu">
-                                        <Link to="/Price_male"><button className="dropdown-item " type="button">หอพักนักศึกษาชายมหาวิทยาลัยเชียงใหม่</button></Link>
-                                        <Link to="/Price_female"><button className="dropdown-item" type="button">หอพักนักศึกษาหญิงมหาวิทยาลัยเชียงใหม่</button></Link>
+                                        <Link to="/Price_male"><button className="joinBtn dropdown-item " type="button">หอพักนักศึกษาชายมหาวิทยาลัยเชียงใหม่</button></Link>
+                                        <Link to="/Price_female"><button className="joinBtn dropdown-item" type="button">หอพักนักศึกษาหญิงมหาวิทยาลัยเชียงใหม่</button></Link>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                 </div>
             </div>
-
             < Footer />
         </>
     );

@@ -464,7 +464,7 @@ body {
 }
 
 .sidebar .nav-link.active {
-  color: #0d6efd;
+  color: #a686e2;
 }
 
 ul li {
@@ -472,5 +472,17 @@ ul li {
 }
 
 .card-room:hover{
+  background: #4c2790 !important;
+  
+}
+.bg-pp{
+  background-color: rgb(166, 95, 233);
+  border-radius: 10px;
+}
+.joinBtn:active {
+  background-color: #9c6ff1 !important;
+  color: #ffffff !important;
+}
   background: #4c2790 !important; 
+}
 }

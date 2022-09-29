@@ -19,7 +19,6 @@ export default function Admin_home() {
 
             <div classname="row ">
                 <div classname="col-1" />
-
             </div>
         </>
     );

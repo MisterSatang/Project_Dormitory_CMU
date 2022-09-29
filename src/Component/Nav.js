@@ -71,7 +71,7 @@ export default function Navbar() {
                                             </a>
                                         </li>
                                         <li>
-                                            <a className="dropdown-item d-inline-flex" href="#">หอพักหญิง 3
+                                            <a className="joinBtn dropdown-item d-inline-flex" href="#">หอพักหญิง 3
                                                 <div className="ms-2 fs-6 text-glay">: 053-944723</div>
                                             </a>
                                         </li>
@@ -79,7 +79,7 @@ export default function Navbar() {
                                     </ul>
                                 </li>
 
-                                    <Link to="/Admin/Price" className="nav-link" aria-current="page" href="#" >
+                                    <Link to="/Price" className="nav-link" aria-current="page" href="#" >
                                         <i class="bi bi-coin me-1"></i>
                                         ราคาหอพัก
                                     </Link>

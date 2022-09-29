@@ -34,7 +34,8 @@ export default function App() {
       <Route path='/Gallery' element={<Gallery />} />
       <Route path='/Price_male' element={<Price_male />} />
       <Route path='/Price_female' element={<Price_female />} />
-
+      <Route path='/Price' element={<Price />} />
+      
       {/* page admin */}
       <Route path='/Admin' element={<Login_admin />} />
       <Route path='/Admin/Slidebar' element={<Slidebar />} />
@@ -46,7 +47,7 @@ export default function App() {
       <Route path='/Admin/De_room' element={<De_room />} />
       <Route path='/Admin/Admin_home' element={<Admin_home />} />
       <Route path='/Admin/testFateBack' element={<Add_testFateBack />} />
-      <Route path='/Admin/Price' element={<Price />} />
+
     </Routes>
   );
 }

@@ -3,7 +3,7 @@ import React from 'react';
 export default function Login_admin() {
     return (
         <>
-            <div className="bg-log col-12 d-flex align-items-center ">
+            <div className="bg-pp col-12 d-flex align-items-center h-100vh ">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6">
