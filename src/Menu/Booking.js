@@ -11,6 +11,8 @@ import Select_room_full from '../Component/Select_room_full';
 
 export default function App() {
 
+  const [dormitories, setDormitories] = useState([]);
+
   const [sexBuilding, setSexBuilding] = useState([]);
   const [floorBuilding, setFloorBuilding] = useState([]);
   const [EmptyPeople, setEmptyPeople] = useState([]);
@@ -19,6 +21,18 @@ export default function App() {
   // console.log(floorBuilding)
   // console.log(EmptyPeople)
 
+  useEffect(() =>{
+      async function getDormitories() {
+        try {
+          const dormitory = await axios.get('http://localhost:8000/dormitories');
+          console.log(dormitory.data);
+          setDormitories(dormitory.data);
+        } catch (error) {
+          console.error(error);
+        }
+      }
+      getDormitories();
+  },[]);
 
   return (
     <>
@@ -59,7 +73,7 @@ export default function App() {
                 <ul class="nav flex-column bg-light mb-0 px-4 py-3 rounded-ts-4">
                     <li class="nav-item">
                       <div class="mb-1">หอพัก</div>
-                  <FilterSexBuilding setSexBuilding={setSexBuilding} />
+                  <FilterSexBuilding setSexBuilding={setSexBuilding} dormitories={dormitories} />
                     </li>
                     <li class="nav-item">
                       <div class="mb-1">ชั้น</div>

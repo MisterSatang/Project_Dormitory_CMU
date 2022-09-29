@@ -22,10 +22,8 @@ export default function FilterEmptyPeople({setEmptyPeople}) {
       getDormitories();
     },[]);  
     
-  const getNumEmpty = [4]
-  for (let i = 0; i < 4; i++){
-    getNumEmpty[i] = 4 - i;
-  }
+  const getNumEmpty = new Array(4).fill(4).map((value,index) => value-index)
+  console.log(getNumEmpty);
 
   return(
     <>
@@ -35,9 +33,9 @@ export default function FilterEmptyPeople({setEmptyPeople}) {
           - 
       </option>
       {
-      getNumEmpty.map(index => (
-        <option key={index} value={index}>
-          {index}
+      getNumEmpty.map(floor => (
+        <option key={floor} value={floor}>
+          {floor}
         </option>
       ))
       }

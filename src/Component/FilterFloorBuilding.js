@@ -23,10 +23,8 @@ export default function FilterFloorBuilding({setFloorBuilding}) {
       getDormitories();
     }, []);    
     
-  const getNumfloor = [dormitories.floor]
-  for (let i = 0; i < dormitories.floor; i++){
-    getNumfloor[i] = i + 1;
-  }
+  const getNumfloor = new Array(dormitories.floor).fill(0).map((value,index) =>index+1)
+  console.log(getNumfloor);
 
   return(
     <>
@@ -35,9 +33,9 @@ export default function FilterFloorBuilding({setFloorBuilding}) {
           - 
       </option>
       {
-      getNumfloor.map(index => (
-        <option key={index} value={index}>
-          {index}
+      getNumfloor.map(floor => (
+        <option key={floor} value={floor}>
+          {floor}
         </option>
       ))
       }

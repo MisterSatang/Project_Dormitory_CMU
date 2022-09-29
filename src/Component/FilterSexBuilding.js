@@ -1,26 +1,8 @@
-import React, { useState, useEffect} from 'react';
-import axios from 'axios';
-
-export default function Item_dropdown_filter({setSexBuilding}) {
-
-  const [dormitories, setDormitories] = useState([]);
+export default function Item_dropdown_filter({setSexBuilding,dormitories}) {
   
   const onChange = (e) => {
     setSexBuilding(e.target.value)
   }
-
-    useEffect(() =>{
-      async function getDormitories() {
-        try {
-          const dormitory = await axios.get('http://localhost:8000/dormitories');
-          console.log(dormitory.data);
-          setDormitories(dormitory.data);
-        } catch (error) {
-          console.error(error);
-        }
-      }
-      getDormitories();
-    },[]);  
 
   return(
     <>
