@@ -28,6 +28,7 @@ export default function App() {
   const [sexBuilding, setSexBuilding] = useState(3);
   const [floorBuilding, setFloorBuilding] = useState([]);
   const [cardRoom, setCardRoom] = useState([]);
+  const [search, setSearch] = useState([]);
 
   console.log();
 
@@ -43,6 +44,7 @@ export default function App() {
         floorBuilding > 0
           ? setRoom.push(`floor=${floorBuilding}`)
           : setRoom.push(null);
+        search > 0 ? setRoom.push(`search=${search}`) : setRoom.push(null);
 
         // console.log({ setRoom });
 
@@ -63,7 +65,7 @@ export default function App() {
       }
     }
     getDormitories();
-  }, [sexBuilding, floorBuilding, cardRoom]);
+  }, [sexBuilding, floorBuilding, cardRoom, search]);
 
   const dataResevre = dormitories.map((room) => room.rooms).flat();
   const roomID = dataResevre.find((room) => students.roomID);
@@ -102,6 +104,10 @@ export default function App() {
     }
   }
 
+  const onChange = (e) => {
+    setSearch(e.target.value);
+  };
+
   return (
     <>
       <Navbar />
@@ -113,7 +119,7 @@ export default function App() {
           className="w-100 image-bg-select_room"
         />
       </div>
-      <div className="container-fluid p-0">
+      <div className="container-fluid p-0 col-sm-mb-3">
         <div className="row mt-4 mx-4">
           <div className="col-xl-3 col-lg-4 col-md-5 col-12 col-sm-6 pe-4 ps-0">
             <div className="bg-white shadow rounded-top-4">
@@ -153,30 +159,27 @@ export default function App() {
                   {students.statusReserve ? (
                     <button
                       type="button"
-                      class="btn btn-outline-light ms-3 cancerResever"
+                      class="btn btn-outline-light bg-green-600 ms-3 cancerResever"
                     >
                       ยกเลิก
                     </button>
                   ) : null}
                 </div>
               </div>
-              {/* ${students.reserve.buildingNo} ห้อง ${students.reserve.roomNo} */}
-              <div className="p-1 bg-light rounded-r-4 shadow-sm mb-4">
+              <div className="p-1 bg-white rounded-r-4 shadow-sm mb-4">
                 <div className="input-group">
                   <input
+                    onChange={onChange}
                     type="search"
                     placeholder="ค้นหา : หมายเลขห้อง ?"
                     aria-describedby="button-addon1"
                     className="form-control border-0 bg-light"
+                    disabled={students.statusReserve ? true : false}
                   />
                   <div className="input-group-append">
-                    <button
-                      id="button-addon1"
-                      type="submit"
-                      className="btn btn-link text-dark"
-                    >
+                    <div className="btn btn-link text-dark">
                       <i className="bi bi-search"></i>
-                    </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -204,13 +207,28 @@ export default function App() {
           </div>
           <div className="col p-0">
             <div className="row m-0">
-              <Select_room
-                dormitories={dormitories}
-                setCardRoom={setCardRoom}
-                sexBuilding={sexBuilding}
-                students={students}
-                setStuReserve={setStuReserve}
-              />
+              {students.statusReserve ? (
+                <div className="container-fluid m-1">
+                  <div className="row mt-6rem">
+                    <div className="text-center text-gray text-5rem">
+                      จองห้องพักสำเร็จ
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="text-center text-gray fs-2">
+                      ไม่สามารถจองเพิ่มได้
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <Select_room
+                  dormitories={dormitories}
+                  setCardRoom={setCardRoom}
+                  sexBuilding={sexBuilding}
+                  students={students}
+                  setStuReserve={setStuReserve}
+                />
+              )}
             </div>
           </div>
         </div>
