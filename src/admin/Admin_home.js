@@ -1,7 +1,63 @@
 import Slidebar from './Slidebar';
+import React, { useRef, useState, useEffect } from 'react';
+import axios from 'axios';
 
-import React from 'react';
 export default function Admin_home() {
+    const [switchReserve, setSwitchReserve] = useState('');
+    const [status, setStatus] = useState('');
+
+    useEffect(() => {
+        async function getSwitch() {
+            try {
+                const statusSwitch = await axios.get('http://localhost:8000/adminSettings')
+                setSwitchReserve(statusSwitch.data)
+            }
+            catch (error) {
+                console.error(error);
+            }
+        }
+        getSwitch();
+    }, [status])
+
+    // const onChange = (e) => {
+    //     console.log("onChange" + switchReserve);
+    //     // if (switchReserve) {
+    //     //     switchReserve = false
+    //     // } else {
+    //     //     switchReserve = true;
+    //     // }
+
+    //     // axios.put(`http://localhost:8000/adminSettings`, {
+    //     //     // "disableReserve": switchReserve
+    //     // })
+    //     //     .then((response) => {
+    //     //         console.log(response);
+    //     //         alert("Edit success");
+    //     //         window.location.reload();
+    //     //     }).catch((error) => {
+    //     //         console.log(error);
+    //     //         alert("Edit fail");
+    //     //     })
+    // }
+    function test() {
+        if (switchReserve.disableReserve) {
+            axios.put(`http://localhost:8000/adminSettings`, {
+                disableReserve: false,
+            }).then(() => {
+                setStatus(switchReserve)
+            })
+        } else {
+            axios.put(`http://localhost:8000/adminSettings`, {
+                disableReserve: true,
+            }).then(() => {
+                setStatus(switchReserve)
+            })
+        }
+        console.log("result = " + switchReserve.disableReserve);
+    }
+
+    // console.log(switchReserve);
+
     return (
         <>
             <div className='container-fluid p-0 bg-admin'>
@@ -17,7 +73,8 @@ export default function Admin_home() {
                                     <h3><strong>ยินดีต้อนรับเข้าสู่ระบบ Admin Dormitory CMU</strong></h3>
                                 </div>
                                 <div className="col-12 d-flex justify-content-center align-items-center">
-                                    <input type="checkbox" id="switch" /><label className='bt me-2' for="switch"></label>
+                                    <input type="checkbox" id="switch" />
+                                    <label className='bt me-2' for="switch" onClick={test}></label>
                                     <div >
                                         <h6>ระบบเปิดปิดการจอง</h6>
                                     </div>
