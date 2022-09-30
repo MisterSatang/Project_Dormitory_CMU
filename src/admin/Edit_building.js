@@ -63,7 +63,6 @@ export default function Edit_building() {
                                                     </option>
                                                 ))}
                                         </select>
-                                        {/* <button type="submit" className="text-center btn btn-primary mt-3 mb-4">Submit</button> */}
                                         <div className="mb-3 border-top border-4 pt-4" >
                                             <label className="form-label">ชื่ออาคาร</label>
                                             <input class="form-control" type="text" placeholder="เช่น หอเก้า" aria-label="default input example" onChange={(e) => setBuil(e.target.value)} />
