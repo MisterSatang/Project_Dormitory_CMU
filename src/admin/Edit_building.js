@@ -43,36 +43,12 @@ export default function Edit_building() {
 
     return (
         <>
-            <from onSubmit={editBuilding}></from>
-            <div className='container-fluid p-0 bg-lights'>
-                <div className='row'>
-                    <Slidebar />
-                    <div className='col-9 d-flex justify-content-center'>
-                        <div className="row ms-3">
-                            <div className="col-11 text-center m-4"><h4>แก้ไขอาคารหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่</h4></div>
-                            <div className="col-2"></div>
-                            <div className="col-8 text-start">
-                                <div className="col-10 ">
-                                    <label className="form-label">อาคารที่ต้องการแก้ไข</label>
-                                    <select className="mb-4 form-select" aria-label="เลือกอาคาร" onChange={(e) => editBuilID(e.target.value)}>
-                                        <option value="" id="">-</option>
-                                        {
-                                            dormitories.map(filteredDormitory => (
-                                                <option key={filteredDormitory.id} value={filteredDormitory.id} id={filteredDormitory.id}>
-                                                    {filteredDormitory.name}
-                                                </option>
-                                            ))}
-                                    </select>
-
-                                    <div className="mb-3 border-top border-4 pt-4">
-                                        <label className="form-label">ชื่ออาคาร</label>
-                                        <input className="form-control" type="text" placeholder="เช่น 105" aria-label="default input example" />
             <from onSubmit={editBuilding}>
                 <div className='container-fluid p-0 bg-lights'>
                     <div className='row'>
                         <Slidebar />
                         <div className='col-9 d-flex justify-content-center'>
-                            <div class="row">
+                            <div class="row ms-3">
                                 <div class="col-11 text-center m-4"><h4>แก้ไขอาคารหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่</h4></div>
                                 <div class="col-2"></div>
                                 <div class="col-8 text-start">
@@ -87,11 +63,11 @@ export default function Edit_building() {
                                                     </option>
                                                 ))}
                                         </select>
-                                        <div className="mb-3 border-top border-4 pt-4" >
+                                        <div className="mb-3 border-4" >
                                             <label className="form-label">ชื่ออาคาร</label>
                                             <input class="form-control" type="text" placeholder="เช่น หอเก้า" aria-label="default input example" onChange={(e) => setBuil(e.target.value)} />
                                         </div>
-                                        <div className="mb-3 border-top border-4 pt-4" >
+                                        <div className="mb-3 border-4" >
                                             <label className="form-label">เลขตึก</label>
                                             <input class="form-control" type="text" placeholder="เช่น 105" aria-label="default input example" onChange={(e) => setNumBuil(e.target.value)} />
                                         </div>
