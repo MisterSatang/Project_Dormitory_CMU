@@ -78,18 +78,21 @@ export default function Navbar() {
                     <i class="bi bi-building me-1"></i>
                     หอพักนักศึกษาชาย
                   </a>
-                  {/* <ul className="dropdown-menu">
+                  <ul className="dropdown-menu">
                     {dormitoryMale.map((dorMale) => (
-                      <li>
-                        <Link to="/GalleryDormitory" className="joinBtn dropdown-item d-inline-flex">
+                      <li key={dorMale.id}>
+                        <Link
+                          to={`/Gallery/${dorMale.id}`}
+                          className="joinBtn dropdown-item d-inline-flex"
+                        >
                           {dorMale.name}
                           <div className="ms-2 fs-6 text-glay">
                             : {dorMale.tel}
                           </div>
-                        </>
+                        </Link>
                       </li>
                     ))}
-                  </ul> */}
+                  </ul>
                 </li>
                 <li className="nav-item dropdown">
                   <a
@@ -104,13 +107,16 @@ export default function Navbar() {
                   </a>
                   <ul className="dropdown-menu">
                     {dormitoryFemale.map((dorFemale) => (
-                      <li>
-                        <a className="joinBtn dropdown-item d-inline-flex">
+                      <li key={dorFemale.id}>
+                        <Link
+                          to={`/Gallery/${dorFemale.id}`}
+                          className="joinBtn dropdown-item d-inline-flex"
+                        >
                           {dorFemale.name}
                           <div className="ms-2 fs-6 text-glay">
                             : {dorFemale.tel}
                           </div>
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
