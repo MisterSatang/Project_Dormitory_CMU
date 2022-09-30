@@ -6,7 +6,7 @@ export default function Slidebar() {
     return (
         <>  
         <div className='col-xl-2 col-lg- col-3 bg-lights'>
-            <div class="container-fluid bg-dark">
+            <div className="container-fluid bg-dark">
                         <div className="align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100 test">
                             <a href="/" className="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-pp text-decoration-none ">
                                 <span className="fs-3 d-none d-sm-inline text-lights"><strong> Menu</strong></span>

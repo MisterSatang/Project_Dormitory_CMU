@@ -9,11 +9,11 @@ export default function De_building() {
                 <div className='row'>
                     <Slidebar />
                     <div className='col-9 d-flex justify-content-center'>
-                        <div class="row ms-3">
-                            <div class="col-11 text-center m-4"><h4>ลบห้องพักนักศึกษา มหาวิทยาลัยเชียงใหม่</h4></div>
-                            <div class="col-2"></div>
-                            <div class="col-8 text-start">
-                                <div classname="col-10 ">
+                        <div className="row ms-3">
+                            <div className="col-11 text-center m-4"><h4>ลบห้องพักนักศึกษา มหาวิทยาลัยเชียงใหม่</h4></div>
+                            <div className="col-2"></div>
+                            <div className="col-8 text-start">
+                                <div className="col-10 ">
                                     <label className="form-label">ห้องที่ต้องการลบ</label>
                                     <select className="mb-4 form-select" aria-label="เลือกอาคาร">
                                         <option value="1">1</option>

@@ -9,7 +9,7 @@ export default function Gallery() {
         <>
             < Navbar />
             <div className='col-12 p-0 m-0 '>
-                <div class="flow row col-12 mg101">
+                <div className="flow row col-12 mg101">
                     <h1>รูปภาพหอพักนักศึกษามหาวิทยาลัยเชียงใหม่</h1>
                     <p>หอพักนักศึกษาหญิง อาคาร 1 </p>
                 </div>

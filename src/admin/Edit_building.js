@@ -41,11 +41,11 @@ export default function Edit_building() {
                 <div className='row'>
                     <Slidebar />
                     <div className='col-9 d-flex justify-content-center'>
-                        <div class="row ms-3">
-                            <div class="col-11 text-center m-4"><h4>แก้ไขอาคารหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่</h4></div>
-                            <div class="col-2"></div>
-                            <div class="col-8 text-start">
-                                <div classname="col-10 ">
+                        <div className="row ms-3">
+                            <div className="col-11 text-center m-4"><h4>แก้ไขอาคารหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่</h4></div>
+                            <div className="col-2"></div>
+                            <div className="col-8 text-start">
+                                <div className="col-10 ">
                                     <label className="form-label">อาคารที่ต้องการแก้ไข</label>
                                     <select className="mb-4 form-select" aria-label="เลือกอาคาร" onChange={(e) => editBuilID(e.target.value)}>
                                         <option value="" id="">-</option>
@@ -59,11 +59,11 @@ export default function Edit_building() {
                                     <button type="submit" className="text-center btn btn-primary mt-3 mb-4">Submit</button>
                                     <div className="mb-3 border-top border-4 pt-4">
                                         <label className="form-label">ชื่ออาคาร</label>
-                                        <input class="form-control" type="text" placeholder="เช่น 105" aria-label="default input example" />
+                                        <input className="form-control" type="text" placeholder="เช่น 105" aria-label="default input example" />
                                     </div>
                                     <div className="mb-3 border-top border-4 pt-4">
                                         <label className="form-label">เลขตึก</label>
-                                        <input class="form-control" type="text" placeholder="เช่น 105" aria-label="default input example" />
+                                        <input className="form-control" type="text" placeholder="เช่น 105" aria-label="default input example" />
                                     </div>
                                     <label className="form-label">ประเภทหอพัก</label>
                                     <select className="mb-4 form-select" aria-label="Default select example">
@@ -82,8 +82,8 @@ export default function Edit_building() {
                     </div>
                 </div>
             </div>
-            <div classname="row ">
-                <div classname="col-1" />
+            <div className="row ">
+                <div className="col-1" />
 
             </div>
         </>

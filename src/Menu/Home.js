@@ -6,13 +6,13 @@ export default function Home() {
     return (
         <>
             <Navbar />
-            <div className="row justify-content-center">
+            <div className="row justify-content-center bg-light">
                 {/* photo */}
-                <div id="" class="pb-4 p-0 m-0 container-fluid ">
+                <div id="" className="pb-4 p-0 m-0 container-fluid ">
                     <img src="https://elearning.cmu.ac.th/pluginfile.php/1/theme_space/sliderimage1/1654502497/20597668_10213765367385655_1137600657_o%20%283%29.jpg" className="w-100 hight-top-photo"></img>
                 </div>
             </div>
-            <div className="container-fluid p-0 m-0 pt-4 ">
+            <div className="container-fluid p-0 m-0 pt-4 bg-light">
                 <div className="row mb-4">
                     <div className="col-1"></div>
 
@@ -20,18 +20,18 @@ export default function Home() {
                         <div className="mb-4 alert-trim rounded p-2 fs-3 new-text-color ">ติดตามข่าวสาร</div>
                         <div className="row justify-content-center">
                             {/* //TODO card */}
-                            <div class="col-xl-3 col-lg-4 col-md-6 col-12 my-4 ">
-                                <div class="container-fluid bg-light p-4 rounded-4 shadow h-100">
-                                    <div class="row align-items-center pb-3">
-                                        <div class="col-4">
+                            <div className="col-xl-3 col-lg-4 col-md-6 col-12 my-4 ">
+                                <div className="container-fluid bg-light p-4 rounded-4 shadow h-100">
+                                    <div className="row align-items-center pb-3">
+                                        <div className="col-4">
                                             <div className="fs-1 d-flex-fit text-center align-items-center new-text-color-p text-center text-center ">14</div>
-                                            <div className="fs-5 d-flex-fit text-center align-items-center new-text-color text-center">กันยายน</div>
+                                            <div className="fs-6 d-flex-fit text-center align-items-center new-text-color text-center">กันยายน</div>
                                         </div>
-                                        <div class="col">
+                                        <div className="col">
                                             <img src="img_dormitory/News/cmu3.jpg" className="rounded card-news" alt="card-news" />
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div className="row">
                                         <div className='container-fluid fs-6 new-text-color text-justify'>
                                             ประกาศสำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง การรับสมัครนักศึกษาเข้าร่วมโครงการทุนทำดี ฟรีค่าหอ ประจำภาคเรียนที่ 2 ปีการศึกษา 2565
                                         </div>
@@ -39,18 +39,18 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div class="col-xl-3 col-lg-4 col-md-6 col-12 my-4">
-                                <div class="container-fluid bg-light p-4 rounded-4 shadow h-100">
-                                    <div class="row align-items-center pb-3">
-                                        <div class="col-4">
+                            <div className="col-xl-3 col-lg-4 col-md-6 col-12 my-4">
+                                <div className="container-fluid bg-light p-4 rounded-4 shadow h-100">
+                                    <div className="row align-items-center pb-3">
+                                        <div className="col-4">
                                             <div className="fs-1 d-flex-fit text-center align-items-center new-text-color-p text-center text-center ">7</div>
-                                            <div className="fs-5 d-flex-fit text-center align-items-center new-text-color text-center">กันยายน</div>
+                                            <div className="fs-6 d-flex-fit text-center align-items-center new-text-color text-center">กันยายน</div>
                                         </div>
-                                        <div class="col">
+                                        <div className="col">
                                             <img src="img_dormitory/News/news1.jpg" className="rounded card-news" alt="..." />
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div className="row">
                                         <div className='container-fluid fs-6 new-text-color text-justify'>
                                             ประกาศสำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง การรับสมัครนักศึกษาเข้าร่วมโครงการทุนทำดี ฟรีค่าหอ ประจำภาคเรียนที่ 2 ปีการศึกษา 2565
                                         </div>
@@ -58,18 +58,18 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div class="col-xl-3 col-lg-4 col-md-6 col-12 my-4">
-                                <div class="container-fluid bg-light p-4 rounded-4 shadow h-100">
-                                    <div class="row align-items-center pb-3">
-                                        <div class="col-4">
+                            <div className="col-xl-3 col-lg-4 col-md-6 col-12 my-4">
+                                <div className="container-fluid bg-light p-4 rounded-4 shadow h-100">
+                                    <div className="row align-items-center pb-3">
+                                        <div className="col-4">
                                             <div className="fs-1 d-flex-fit text-center align-items-center new-text-color-p text-center text-center ">4</div>
-                                            <div className="fs-5 d-flex-fit text-center align-items-center new-text-color text-center">มิถุนายน</div>
+                                            <div className="fs-6 d-flex-fit text-center align-items-center new-text-color text-center">มิถุนายน</div>
                                         </div>
-                                        <div class="col">
+                                        <div className="col">
                                             <img src="img_dormitory/News/news2.jpg" className="rounded card-news" alt="..." />
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div className="row">
                                         <div className='container-fluid fs-6 new-text-color text-justify'>
                                             ประกาศ สำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง การคืนเงินค่าบำรุงหอพักร้อยละ 10
                                             สำหรับนักศึกษาที่พักในหอพักนักศึกษา ประจำภาคการศึกษาที่ 3 ปีการศึกษา 2564 กรณี
@@ -79,18 +79,18 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div class="col-xl-3 col-lg-4 col-md-6 col-12 my-4">
-                                <div class="container-fluid bg-light p-4 rounded-4 shadow h-100">
-                                    <div class="row align-items-center pb-3">
-                                        <div class="col-4">
+                            <div className="col-xl-3 col-lg-4 col-md-6 col-12 my-4">
+                                <div className="container-fluid bg-light p-4 rounded-4 shadow h-100">
+                                    <div className="row align-items-center pb-3">
+                                        <div className="col-4">
                                             <div className="fs-1 d-flex-fit text-center align-items-center new-text-color-p text-center text-center ">5</div>
-                                            <div className="fs-5 d-flex-fit text-center align-items-center new-text-color text-center">พฤษภาคม</div>
+                                            <div className="fs-6 d-flex-fit text-center align-items-center new-text-color text-center">พฤษภาคม</div>
                                         </div>
-                                        <div class="col">
+                                        <div className="col">
                                             <img src="img_dormitory/News/news3.jpg" className="rounded card-news" alt="..." />
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div className="row">
                                         <div className='container-fluid fs-6 new-text-color text-justify'>
                                             ประกาศ สำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง การเปลี่ยนแปลงวันรายงานตัวเข้าหอพักนักศึกษา ประจำภาคเรียนที่ 1 ปีการศึกษา 2565
                                         </div>
@@ -98,18 +98,18 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div class="col-xl-3 col-lg-4 col-md-6 col-12 my-4">
-                                <div class="container-fluid bg-light p-4 rounded-4 shadow h-100">
-                                    <div class="row align-items-center pb-3">
-                                        <div class="col-4">
+                            <div className="col-xl-3 col-lg-4 col-md-6 col-12 my-4">
+                                <div className="container-fluid bg-light p-4 rounded-4 shadow h-100">
+                                    <div className="row align-items-center pb-3">
+                                        <div className="col-4">
                                             <div className="fs-1 d-flex-fit text-center align-items-center new-text-color-p text-center text-center ">10</div>
-                                            <div className="fs-5 d-flex-fit text-center align-items-center new-text-color text-center">พฤษภาคม</div>
+                                            <div className="fs-6 d-flex-fit text-center align-items-center new-text-color text-center">พฤษภาคม</div>
                                         </div>
-                                        <div class="col">
+                                        <div className="col">
                                             <img src="img_dormitory/News/news4.jpg" className="rounded card-news" alt="..." />
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div className="row">
                                         <div className='container-fluid fs-6 new-text-color text-justify'>
                                             ประกาศ มหาวิทยาลัยเชียงใหม่ เรื่อง การเปลี่ยนแปลงวันรับสมัครนักศึกษาชั้นปีที่ 1 เข้าพักในหอพักนักศึกษาของมหาวิทยาลัยเชียงใหม่
                                             TCAS รอบที่ 2 แบบที่ 2 โควตา Quota ประจำภาคเรียนที่ 1 ปีการศึกษา 2565
@@ -117,18 +117,18 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-4 col-md-6 col-12 my-4">
-                                <div class="container-fluid bg-light p-4 rounded-4 shadow h-100">
-                                    <div class="row align-items-center pb-3">
-                                        <div class="col-4">
+                            <div className="col-xl-3 col-lg-4 col-md-6 col-12 my-4">
+                                <div className="container-fluid bg-light p-4 rounded-4 shadow h-100">
+                                    <div className="row align-items-center pb-3">
+                                        <div className="col-4">
                                             <div className="fs-1 d-flex-fit text-center align-items-center new-text-color-p text-center text-center ">9</div>
-                                            <div className="fs-5 d-flex-fit text-center align-items-center new-text-color text-center">พฤษภาคม</div>
+                                            <div className="fs-6 d-flex-fit text-center align-items-center new-text-color text-center">พฤษภาคม</div>
                                         </div>
-                                        <div class="col">
+                                        <div className="col">
                                             <img src="img_dormitory/News/news5.jpg" className="rounded card-news" alt="..." />
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div className="row">
                                         <div className='container-fluid fs-6 new-text-color text-justify'>
                                             ประกาศ สำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง กำหนดปิดหอพักนักศึกษา ประจำภาคเรียนฤดูร้อน ปีการศึกษา 2564
                                             และกำหนดเปิดหอพักนักศึกษา ประจำภาคเรียนที่ 1 ปีการศึกษา 2565
@@ -136,18 +136,18 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-4 col-md-6 col-12 my-4">
-                                <div class="container-fluid bg-light p-4 rounded-4 shadow h-100">
-                                    <div class="row align-items-center pb-3">
-                                        <div class="col-4">
+                            <div className="col-xl-3 col-lg-4 col-md-6 col-12 my-4">
+                                <div className="container-fluid bg-light p-4 rounded-4 shadow h-100">
+                                    <div className="row align-items-center pb-3">
+                                        <div className="col-4">
                                             <div className="fs-1 d-flex-fit text-center align-items-center new-text-color-p text-center text-center ">29</div>
-                                            <div className="fs-5 d-flex-fit text-center align-items-center new-text-color text-center">เมษายน</div>
+                                            <div className="fs-6 d-flex-fit text-center align-items-center new-text-color text-center">เมษายน</div>
                                         </div>
-                                        <div class="col">
+                                        <div className="col">
                                             <img src="img_dormitory/News/news6.jpg" className="rounded card-news" alt="..." />
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div className="row">
                                         <div className='container-fluid fs-6 new-text-color text-justify'>
                                             ประกาศ สำนักงานหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่ เรื่อง การรับสมัครนักศึกษาเข้าพักในหอพักนักศึกษาหญิง อาคาร 10 (หอพัก 40 ปี) ประจำภาคเรียนที่ 1 ปีการศึกษา 2565 (เพิ่มเติม)
                                         </div>

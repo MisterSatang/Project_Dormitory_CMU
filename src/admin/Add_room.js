@@ -45,10 +45,10 @@ export default function Add_room() {
                     <div className='row'>
                         <Slidebar />
                         <div className='col-9 d-flex justify-content-center'>
-                            <div class="row ms-3">
-                                <div class="col-11 text-center m-4"><h4>เพิ่มห้องพักหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่</h4></div>
-                                <div class="col-2"></div>
-                                <div class="col-8 text-start">
+                            <div className="row ms-3">
+                                <div className="col-11 text-center m-4"><h4>เพิ่มห้องพักหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่</h4></div>
+                                <div className="col-2"></div>
+                                <div className="col-8 text-start">
                                     <div classname="col-10 ">
                                         <label className="form-label">อาคารที่ต้องการเพิ่มห้อง</label>
                                         <select className="mb-4 form-select" aria-label="เลือกอาคาร" onChange={(e) => setBuilID(e.target.value)}>
@@ -71,7 +71,7 @@ export default function Add_room() {
                                         </select>
                                         <div className="mb-3">
                                             <label className="form-label">เลขห้อง</label>
-                                            <input class="form-control" type="text" placeholder="เช่น 125" aria-label="default input example" onChange={(e) => setNunroom(e.target.value)} />
+                                            <input className="form-control" type="text" placeholder="เช่น 125" aria-label="default input example" onChange={(e) => setNunroom(e.target.value)} />
                                         </div>
                                         <label className="form-label">จำนวนคน</label>
                                         <select className="mb-4 form-select" aria-label="Default select example" id="numberF loor" onChange={(e) => setPeople(e.target.value)}>
@@ -90,8 +90,8 @@ export default function Add_room() {
                         </div>
                     </div>
 
-                    <div classname="row ">
-                        <div classname="col-1" />
+                    <div className="row ">
+                        <div className="col-1" />
 
                     </div>
                 </div>
