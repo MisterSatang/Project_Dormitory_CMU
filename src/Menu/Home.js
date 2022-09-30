@@ -20,9 +20,10 @@ export default function Home() {
           <div className="col-1"></div>
 
           <div className="col-10">
-            <div className="mb-4 alert-trim rounded p-2 fs-3 new-text-color ">
+            <div className=" col-12 alert-trim rounded p-2 fs-3 new-text-color text-center">
               ติดตามข่าวสาร
             </div>
+            <hr></hr>
             <div className="row justify-content-center">
               {/* //TODO card */}
               <div class="col-xl-3 col-lg-4 col-md-6 col-12 my-4 ">
