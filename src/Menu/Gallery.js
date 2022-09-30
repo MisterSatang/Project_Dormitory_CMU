@@ -7,9 +7,22 @@ import Footer from "../Component/Footer";
 
 export default function Gallery() {
   let { id } = useParams();
-  //   console.log(id);
-  const images = new Array(38).fill(0).map((value, index) => index + 1);
-  console.log(images);
+
+  const [galleries, setGalleries] = useState([]);
+  useEffect(() => {
+    async function getGellery() {
+      try {
+        const imageGellery = await axios.get(
+          `http://localhost:8000/gelleries/${id}`
+        );
+        setGalleries(imageGellery.data);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    getGellery();
+  }, [id]);
+
   return (
     <>
       <Navbar />
@@ -23,14 +36,15 @@ export default function Gallery() {
           <div className="col"></div>
           <div className="col-10">
             <ul className="auto-grid " role="list">
-              {images.map((image) => (
+              {galleries.image?.map((image) => (
                 <li>
-                  <a className="profile">
-                    <h2 className="profile__name">01</h2>
+                  <div className="profile">
+                    <h2 className="profile__name">หอพักนักศึกษา</h2>
                     <img
-                      src={`http://localhost:8000/dormitories/img/${image}.jpg`}
+                      src={`http://localhost:8000/dormitories/img/${image?.buildingNo}/${image?.namefile}`}
+                      alt="imageDormitory"
                     />
-                  </a>
+                  </div>
                 </li>
               ))}
             </ul>

@@ -141,8 +141,11 @@ export default function Navbar() {
               <Link
                 to="/Login"
                 type="button"
-                class="btn btn-outline-primary"
-                disabled={settings.disableReserve}
+                class={
+                  settings.disableReserve
+                    ? "btn btn-outline-danger disabled"
+                    : "btn btn-outline-primary"
+                }
               >
                 <i class="bi bi-pen me-1"></i>
                 {settings.disableReserve ? "ไม่สามารถจองได้" : "จองห้องพัก"}

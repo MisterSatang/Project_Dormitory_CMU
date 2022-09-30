@@ -38,7 +38,7 @@ export default function App() {
         console.log("no");
       }
     } else {
-      console.log("Don't have");
+      alert("ชื่อหรือรหัสผ่าน ไม่ถูกต้อง");
     }
   }
   const inputUser = (event) => {
