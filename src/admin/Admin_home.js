@@ -14,7 +14,7 @@ export default function Admin_home() {
                             </div>
                             <div className="text-color col-12  justify-content-center align-items-end ">
                                 <div className="col-12 d-flex justify-content-center align-items-center mb-3">
-                                <h3><strong>ยินดีต้อนรับเข้าสู่ระบบ Admin Dormitory CMU</strong></h3>
+                                    <h3><strong>ยินดีต้อนรับเข้าสู่ระบบ Admin Dormitory CMU</strong></h3>
                                 </div>
                                 <div className="col-12 d-flex justify-content-center align-items-center">
                                     <input type="checkbox" id="switch" /><labell className='me-2' for="switch"></labell>

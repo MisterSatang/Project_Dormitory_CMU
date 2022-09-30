@@ -35,6 +35,7 @@ export default function Edit_building() {
             .then((response) => {
                 console.log(response);
                 alert("Edit success");
+                window.location.reload();
             }).catch((error) => {
                 console.log(error);
                 alert("Edit fail");
