@@ -11,7 +11,6 @@ export default function Add_building() {
     const [floor, setFloor] = useState('');
 
     const postDormitories = (e) => {
-        e.preventDefault();
         axios.post("http://localhost:8000/dormitories", {
             "buildingNo": Number.parseInt(numBuil),
             "floor": Number.parseInt(floor),
@@ -21,8 +20,10 @@ export default function Add_building() {
         })
             .then((response) => {
                 console.log(response);
+                alert("Post success");
             }).catch((error) => {
                 console.log(error);
+                alert("Post fail");
             })
     }
     // e.target.sex.value e.target.number.value
@@ -56,11 +57,11 @@ export default function Add_building() {
                     <div className='row'>
                         <Slidebar />
                         <div className='col-9 d-flex justify-content-center'>
-                            <div className="row ms-3">
-                                <div className="col-11 text-center m-4"><h4>เพิ่มอาคารหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่</h4></div>
-                                <div className="col-2"></div>
-                                <div className="col-8 text-start">
-                                    <div className="col-10 ">
+                            <div class="row">
+                                <div class="col-11 text-center m-4"><h4>เพิ่มอาคารหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่</h4></div>
+                                <div class="col-2"></div>
+                                <div class="col-8 text-start">
+                                    <div classname="col-10 ">
                                         <div className="mb-3">
                                             <label className="form-label">ชื่ออาคาร</label>
                                             <input className="form-control" type="text" id='' onChange={(e) => setBuil(e.target.value)} />
@@ -71,7 +72,7 @@ export default function Add_building() {
                                         </div>
                                         <div className="mb-3">
                                             <label className="form-label">เลขตึก</label>
-                                            <input className="form-control" type="text" placeholder="เช่น 1" aria-label="default input example" onChange={(e) => setNumBuil(e.target.value)} />
+                                            <input class="form-control" type="text" placeholder="เช่น 1" aria-label="default input example" onChnage={(e) => setNumBuil(e.target.value)} />
                                         </div>
 
                                         <label className="form-label">จำนวนชั้น</label>
@@ -97,8 +98,8 @@ export default function Add_building() {
                     </div>
                 </div>
 
-                <div className="row ">
-                    <div className="col-1" />
+                <div classname="row ">
+                    <div classname="col-1" />
 
                 </div>
             </from>

@@ -9,6 +9,7 @@ export default function Add_room() {
     const [builID, setBuilID] = useState('');
 
     const [dormitories, setDormitories] = useState([]);
+    const [post, setPost] = useState([]);
 
     useEffect(() => {
         async function getdormitories() {
@@ -21,19 +22,23 @@ export default function Add_room() {
             }
         }
         getdormitories();
-    }, []);
+    }, [post]);
 
     const postRoom = (e) => {
         e.preventDefault();
         axios.post(`http://localhost:8000/rooms/${builID}`, {
             "floor": Number.parseInt(floor),
             "roomNo": numroom,
-            "numMax": Number.parseInt(people)
+            "numMax": Number.parseInt(people),
+            "numStudent": 0
         })
             .then((response) => {
                 console.log(response);
+                setPost(dormitories);
+                alert("Post success");
             }).catch((error) => {
                 console.log(error);
+                alert("Post fail");
             })
     }
 
@@ -41,14 +46,14 @@ export default function Add_room() {
         <>
             <from onSubmit={postRoom}>
 
-                <div className='container-fluid p-0 bg-lights'>
+                <div className='container-fluid p-0'>
                     <div className='row'>
                         <Slidebar />
-                        <div className='col-9 d-flex justify-content-center'>
-                            <div className="row ms-3">
-                                <div className="col-11 text-center m-4"><h4>เพิ่มห้องพักหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่</h4></div>
-                                <div className="col-2"></div>
-                                <div className="col-8 text-start">
+                        <div className='col-6'>
+                            <div class="row ms-3">
+                                <div class="col-11 text-center m-4"><h4>เพิ่มห้องพักหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่</h4></div>
+                                <div class="col-2"></div>
+                                <div class="col-8 text-start">
                                     <div classname="col-10 ">
                                         <label className="form-label">อาคารที่ต้องการเพิ่มห้อง</label>
                                         <select className="mb-4 form-select" aria-label="เลือกอาคาร" onChange={(e) => setBuilID(e.target.value)}>
@@ -61,7 +66,7 @@ export default function Add_room() {
                                                 ))}
                                         </select>
 
-                                        <label className="form-label">จำนวนชั้น</label>
+                                        <label className="form-label">ชั้นที่</label>
                                         <select className="mb-4 form-select" aria-label="Default select example" id="numberF loor" onChange={(e) => setFloor(e.target.value)}>
                                             <option value="" id="">-</option>
                                             <option value="1" id="1">1</option>
@@ -71,7 +76,7 @@ export default function Add_room() {
                                         </select>
                                         <div className="mb-3">
                                             <label className="form-label">เลขห้อง</label>
-                                            <input className="form-control" type="text" placeholder="เช่น 125" aria-label="default input example" onChange={(e) => setNunroom(e.target.value)} />
+                                            <input class="form-control" type="text" placeholder="เช่น 125" aria-label="default input example" onChange={(e) => setNunroom(e.target.value)} />
                                         </div>
                                         <label className="form-label">จำนวนคน</label>
                                         <select className="mb-4 form-select" aria-label="Default select example" id="numberF loor" onChange={(e) => setPeople(e.target.value)}>
@@ -90,8 +95,8 @@ export default function Add_room() {
                         </div>
                     </div>
 
-                    <div className="row ">
-                        <div className="col-1" />
+                    <div classname="row ">
+                        <div classname="col-1" />
 
                     </div>
                 </div>
