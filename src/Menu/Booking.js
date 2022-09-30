@@ -126,7 +126,7 @@ export default function App() {
               <div className="pt-4 px-3  bg-light rounded-top-4 border-bottom border-1 border-3">
                 <div className="d-flex align-items-center">
                   <img
-                    src="img_dormitory/imageStudent/01.jpg"
+                    src={students.imageURL}
                     alt="imageStudent"
                     className="mr-3 profile-student shadow-sm rounded-3"
                   />

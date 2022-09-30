@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [settings, setSettings] = useState([]);
+  const [dormitories, setDormitories] = useState([]);
+
   useEffect(() => {
     const getSettings = async () => {
       const result = await axios.get("http://localhost:8000/adminSettings");
@@ -12,6 +14,24 @@ export default function Navbar() {
     };
     getSettings();
   }, []);
+  useEffect(() => {
+    async function getDormitories() {
+      try {
+        const dormitory = await axios.get(`http://localhost:8000/dormitories`);
+        setDormitories(dormitory.data);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    getDormitories();
+  }, []);
+
+  const dormitoryMale = dormitories.filter(
+    (dormitory) => dormitory.sex == "builderMale"
+  );
+  const dormitoryFemale = dormitories.filter(
+    (dormitory) => dormitory.sex == "builderFemale"
+  );
 
   return (
     <>
@@ -58,35 +78,18 @@ export default function Navbar() {
                     <i class="bi bi-building me-1"></i>
                     หอพักนักศึกษาชาย
                   </a>
-                  <ul className="dropdown-menu">
-                    <li>
-                      <a
-                        className="joinBtn dropdown-item d-inline-flex"
-                        href="#"
-                      >
-                        หอพักชาย 1
-                        <div className="ms-2 fs-6 text-glay">: 053-944711</div>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="joinBtn dropdown-item d-inline-flex"
-                        href="#"
-                      >
-                        หอพักชาย 2
-                        <div className="ms-2 fs-6 text-glay">: 053-944712</div>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="joinBtn dropdown-item d-inline-flex"
-                        href="#"
-                      >
-                        หอพักชาย 3
-                        <div className="ms-2 fs-6 text-glay">: 053-944733</div>
-                      </a>
-                    </li>
-                  </ul>
+                  {/* <ul className="dropdown-menu">
+                    {dormitoryMale.map((dorMale) => (
+                      <li>
+                        <Link to="/GalleryDormitory" className="joinBtn dropdown-item d-inline-flex">
+                          {dorMale.name}
+                          <div className="ms-2 fs-6 text-glay">
+                            : {dorMale.tel}
+                          </div>
+                        </>
+                      </li>
+                    ))}
+                  </ul> */}
                 </li>
                 <li className="nav-item dropdown">
                   <a
@@ -100,33 +103,16 @@ export default function Navbar() {
                     หอพักนักศึกษาหญิง
                   </a>
                   <ul className="dropdown-menu">
-                    <li>
-                      <a
-                        className="joinBtn dropdown-item d-inline-flex"
-                        href="#"
-                      >
-                        หอพักหญิง 1
-                        <div className="ms-2 fs-6 text-glay">: 053-944711</div>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="joinBtn dropdown-item d-inline-flex"
-                        href="#"
-                      >
-                        หอพักหญิง 2
-                        <div className="ms-2 fs-6 text-glay">: 053-944722</div>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="joinBtn dropdown-item d-inline-flex"
-                        href="#"
-                      >
-                        หอพักหญิง 3
-                        <div className="ms-2 fs-6 text-glay">: 053-944723</div>
-                      </a>
-                    </li>
+                    {dormitoryFemale.map((dorFemale) => (
+                      <li>
+                        <a className="joinBtn dropdown-item d-inline-flex">
+                          {dorFemale.name}
+                          <div className="ms-2 fs-6 text-glay">
+                            : {dorFemale.tel}
+                          </div>
+                        </a>
+                      </li>
+                    ))}
                   </ul>
                 </li>
 
