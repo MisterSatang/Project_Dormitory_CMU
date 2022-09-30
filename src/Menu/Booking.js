@@ -8,11 +8,28 @@ import FilterFloorBuilding from "../Component/FilterFloorBuilding";
 import Select_room from "../Component/Select_room";
 
 export default function App() {
+  const queryParams = new URLSearchParams(window.location.search);
+  const id = queryParams.get("id");
+
+  const [students, setStudents] = useState([]);
+  const [stuReserve, setStuReserve] = useState([]);
+
+  useEffect(() => {
+    const getStudents = async () => {
+      const result = await axios.get(`http://localhost:8000/students/${id}`);
+      // console.log(result.data);
+      setStudents(result.data);
+    };
+    getStudents();
+  }, [stuReserve]);
+
   const [dormitories, setDormitories] = useState([]);
 
   const [sexBuilding, setSexBuilding] = useState(3);
   const [floorBuilding, setFloorBuilding] = useState([]);
   const [cardRoom, setCardRoom] = useState([]);
+
+  console.log();
 
   useEffect(() => {
     async function getDormitories() {
@@ -48,6 +65,43 @@ export default function App() {
     getDormitories();
   }, [sexBuilding, floorBuilding, cardRoom]);
 
+  const dataResevre = dormitories.map((room) => room.rooms).flat();
+  const roomID = dataResevre.find((room) => students.roomID);
+
+  function deleteReserve() {
+    console.log(dataResevre);
+    console.log(students.roomID);
+    console.log(roomID);
+
+    if (window.confirm(`คุณต้องการยกเลิกการจองห้อง ใช่ไหม`) == true) {
+      axios
+        .put(
+          `http://localhost:8000/rooms/${students.buildingNo}/${students.roomID}`,
+          {
+            floor: roomID.floor,
+            roomNo: roomID.roomNo,
+            numMax: roomID.numMax,
+            numStudent: roomID.numStudent - 1,
+          }
+        )
+        .then(() => {
+          setCardRoom(dormitories);
+        });
+      axios
+        .put(`http://localhost:8000/students/${students.id}`, {
+          statusReserve: false,
+          roomID: null,
+          buildingNo: null,
+          roomNo: "",
+        })
+        .then(() => {
+          setStuReserve(students);
+        });
+    } else {
+      console.log("no");
+    }
+  }
+
   return (
     <>
       <Navbar />
@@ -71,21 +125,42 @@ export default function App() {
                     className="mr-3 profile-student shadow-sm rounded-3"
                   />
                   <div className="ms-3">
-                    <div className="d-inline-flex fs-5 m-0 me-2">สตางค์</div>
-                    <div className="d-inline-flex fs-5 m-0">บุตรสัย</div>
-                    <div className="font-weight-light text-muted mb-0">
-                      คณะ ศิลปะ สื่อ เทคโนโลยี
+                    <div className="d-inline-flex fs-5 m-0 me-2">
+                      {students.firsname}
+                    </div>
+                    <div className="d-inline-flex fs-5 m-0">
+                      {students.lastname}
                     </div>
                     <div className="font-weight-light text-muted mb-0">
-                      สาขา DII
+                      {`คณะ : ${students.faculty}`}
+                    </div>
+                    <div className="font-weight-light text-muted mb-0">
+                      {`สาขา : ${students.major}`}
                     </div>
                   </div>
                 </div>
-                <div className="py-3 text-center text-gray">
-                  ไม่มีการจองห้องพัก
+                <div
+                  className={
+                    students.statusReserve
+                      ? "py-3 text-center text-white bg-success my-1 px-1"
+                      : "py-3 text-center text-white bg-danger my-1 px-1"
+                  }
+                  onClick={() => deleteReserve()}
+                >
+                  {students.statusReserve
+                    ? `จองหอ ${students.buildingNo} ห้อง ${students.roomNo} สำเร็จ`
+                    : "ยังไม่ได้จองหอพัก"}
+                  {students.statusReserve ? (
+                    <button
+                      type="button"
+                      class="btn btn-outline-light ms-3 cancerResever"
+                    >
+                      ยกเลิก
+                    </button>
+                  ) : null}
                 </div>
               </div>
-
+              {/* ${students.reserve.buildingNo} ห้อง ${students.reserve.roomNo} */}
               <div className="p-1 bg-light rounded-r-4 shadow-sm mb-4">
                 <div className="input-group">
                   <input
@@ -108,15 +183,21 @@ export default function App() {
               <p className="text-gray font-weight-bold text-uppercase px-3 small pb-3 mb-0">
                 <i className="bi bi-funnel me-1"></i>Filter
               </p>
-
               <ul className="nav flex-column bg-light mb-0 px-4 py-3 rounded-ts-4">
                 <li className="nav-item">
                   <div className="mb-1">หอพัก</div>
-                  <FilterSexBuilding setSexBuilding={setSexBuilding} />
+                  <FilterSexBuilding
+                    setSexBuilding={setSexBuilding}
+                    sex={students.sex}
+                    students={students}
+                  />
                 </li>
                 <li className="nav-item">
                   <div className="mb-1">ชั้น</div>
-                  <FilterFloorBuilding setFloorBuilding={setFloorBuilding} />
+                  <FilterFloorBuilding
+                    setFloorBuilding={setFloorBuilding}
+                    students={students}
+                  />
                 </li>
               </ul>
             </div>
@@ -127,6 +208,8 @@ export default function App() {
                 dormitories={dormitories}
                 setCardRoom={setCardRoom}
                 sexBuilding={sexBuilding}
+                students={students}
+                setStuReserve={setStuReserve}
               />
             </div>
           </div>

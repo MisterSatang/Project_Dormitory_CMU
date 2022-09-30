@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-export default function FilterFloorBuilding({ setFloorBuilding }) {
+export default function FilterFloorBuilding({ setFloorBuilding, students }) {
   const [dormitories, setDormitories] = useState({});
 
   const onChange = (e) => {
@@ -36,13 +36,16 @@ export default function FilterFloorBuilding({ setFloorBuilding }) {
         onChange={onChange}
         class="form-select mb-3"
         aria-label="Default select example"
+        disabled={students.statusReserve}
       >
-        <option>ทั้งหมด</option>
-        {getNumfloor.map((floor) => (
-          <option key={floor} value={floor}>
-            {floor}
-          </option>
-        ))}
+        {students.statusReserve ? <option>-</option> : <option>ทั้งหมด</option>}
+        {students.statusReserve
+          ? null
+          : getNumfloor.map((floor) => (
+              <option key={floor} value={floor}>
+                {floor}
+              </option>
+            ))}
       </select>
     </>
   );
