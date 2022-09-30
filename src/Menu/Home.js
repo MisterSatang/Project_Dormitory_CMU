@@ -243,9 +243,10 @@ export default function Home() {
         <div className="row mb-4">
           <div className="col-1"></div>
           <div className="col-10">
-            <div className="mb-1 alert-trim rounded p-2 fs-3 new-text-color ">
+            <div className="col-12 alert-trim rounded p-2 fs-3 new-text-color text-center">
               การรับสมัครเข้าหอพักนักศึกษา
             </div>
+            <hr></hr>
             {/* cardlink */}
             <div className="align-items-center row justify-content-center">
               <div className="align-items-center row bg-light pt-2 pb-2 m-3 new-br new-shdow justify-content-center col-12 col-md-5 col-lg-5 col-xl-5 ">
