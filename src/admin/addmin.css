@@ -247,7 +247,7 @@ input[type=checkbox]{
 	visibility: hidden;
 }
 
-labell {
+.bt {
 	cursor: pointer;
 	text-indent: -9999px;
 	width: 60px;
@@ -258,7 +258,7 @@ labell {
 	position: relative;
 }
 
-labell:after {
+.bt:after {
 	content: '';
 	position: absolute;
 	top: 5px;
@@ -267,18 +267,18 @@ labell:after {
 	height: 20px;
 	background: #fff;
 	border-radius: 90px;
-	transition: 0.4s;
+	transition: 0.2s;
 }
 
-input:checked + label {
+input:checked + .bt {
 	background: #6f42c1;
 }
 
-input:checked + label:after {
+input:checked + .bt:after {
 	left: calc(100% - 5px);
 	transform: translateX(-100%);
 }
 
-label:active:after {
+.bt:active:after {
 	width: 130px;
 }
