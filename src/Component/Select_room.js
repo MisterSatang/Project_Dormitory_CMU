@@ -1,22 +1,95 @@
-export default function Item_dropdown_filter() {
+import axios from "axios";
+export default function Select_room({
+  dormitories,
+  setCardRoom,
+  sexBuilding,
+  students,
+  setStuReserve,
+}) {
+  const cardRooms = dormitories.map((room) => room.rooms).flat();
+
+  function addReversedRoom(roomID, floor, roomNo, numMax, numStudent) {
+    if (window.confirm(`คุณต้องการจองห้อง : ${roomNo} ใช่ไหม`) == true) {
+      axios
+        .put(`http://localhost:8000/rooms/${sexBuilding}/${roomID}`, {
+          floor: floor,
+          roomNo: roomNo,
+          numMax: numMax,
+          numStudent: numStudent + 1,
+        })
+        .then(() => {
+          setCardRoom(dormitories);
+        });
+      axios
+        .put(`http://localhost:8000/students/${students.id}`, {
+          statusReserve: true,
+          roomID: roomID,
+          buildingNo: dormitories[0].buildingNo,
+          roomNo: roomNo,
+        })
+        .then(() => {
+          setStuReserve(students);
+        });
+    } else {
+      console.log("no");
+    }
+  }
+
   return (
     <>
-      <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
-        <div className="room bg-purple shadow card-room">
-          <div className="container-fluid">
-            <div className="row">
-              <div className="col"></div>
-              <div className="col-8 d-flex bg-white rounded-room fs-5 count-room p-0 justify-content-center"><div className="d-flex align-items-center text-purple">0/4</div></div>
+      {students.statusReserve
+        ? null
+        : cardRooms.map((cardRoom) => (
+            <div
+              key={cardRoom.id}
+              class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 "
+            >
+              <button
+                class={
+                  cardRoom.numStudent === cardRoom.numMax
+                    ? "room shadow bg-dark-100 text-dark"
+                    : "room shadow card-room bg-purple"
+                }
+                onClick={() =>
+                  addReversedRoom(
+                    cardRoom.id,
+                    cardRoom.floor,
+                    cardRoom.roomNo,
+                    cardRoom.numMax,
+                    cardRoom.numStudent
+                  )
+                }
+                disabled={
+                  cardRoom.numStudent === cardRoom.numMax ? true : false
+                }
+              >
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col"></div>
+                    <div class="col-8 d-flex bg-white rounded-room fs-5 count-room p-0 justify-content-center">
+                      <div
+                        class={
+                          cardRoom.numStudent === cardRoom.numMax
+                            ? "d-flex align-items-center text-dark-100"
+                            : "d-flex align-items-center text-purple"
+                        }
+                      >
+                        {cardRoom.numStudent === cardRoom.numMax
+                          ? "เต็ม"
+                          : `${cardRoom.numStudent}/${cardRoom.numMax}`}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <div class="d-flex text-white fs-3 ">{cardRoom.roomNo}</div>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <div class="d-flex text-white fs-6">ห้องเลข</div>
+                  </div>
+                </div>
+              </button>
             </div>
-            <div className="d-flex justify-content-center">
-              <div className="d-flex text-white fs-3 ">102</div>
-            </div>
-            <div className="d-flex justify-content-center">
-              <div className="d-flex text-white fs-6">ห้องเลข</div>
-            </div>
-          </div>
-        </div>
-      </div>
+          ))}
     </>
   );
 }

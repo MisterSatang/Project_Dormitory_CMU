@@ -421,6 +421,7 @@ body {
   border-radius: 1rem;
   padding-bottom: 0.7rem;
   margin-top: 1.5rem;
+  border: 0;
 }
 
 @media (max-width: 575px) {
@@ -434,8 +435,10 @@ body {
 }
 
 .bg-dark-100 {
-  background: rgb(160, 158, 158);
   background: rgb(116, 114, 114);
+}
+.text-dark-100 {
+  color: rgb(116, 114, 114);
 }
 
 .sidebar {
@@ -479,4 +482,7 @@ ul li {
 .joinBtn:active {
   background-color: #9c6ff1 !important;
   color: #ffffff !important;
+}
+.cancerResever:hover{
+  color:#dc3545 !important;
 }
