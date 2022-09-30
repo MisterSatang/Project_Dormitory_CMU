@@ -9,20 +9,20 @@ export default function Price() {
         <>
             < Navbar />
             <div className='col-12 p-0 m-0 '>
-                <div class="flow row col-12 mg101">
+                <div className="flow row col-12 mg101">
                     <h1>ราคาหอพักนักศึกษามหาวิทยาลัยเชียงใหม่</h1>
                     <p>Chiang Mai University student dormitory prices</p>
                 </div>
 
             </div>
-            <div class="container h-100vh">
-                <div class="row py-3">
-                    <div class="col-lg-7 mx-auto m-3">
-                        <div class="card shadow mb-4">
+            <div className="container h-100vh">
+                <div className="row py-3">
+                    <div className="col-lg-7 mx-auto m-3">
+                        <div className="card shadow mb-4">
                             <div className="bg-pp card-body p-5">
-                                <h4 class="mb-4 text-light d-flex justify-content-center"><strong>กรุณาเลือกหอพักที่ต้องการทราบราคา</strong></h4>
+                                <h4 className="mb-4 text-light d-flex justify-content-center"><strong>กรุณาเลือกหอพักที่ต้องการทราบราคา</strong></h4>
                                 <div className="dropdown d-flex justify-content-center">
-                                    <button class="btn btn-light dropdown-toggle col-6" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <button className="btn btn-light dropdown-toggle col-6" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         เลือกหอพักนักศึกษา
                                     </button>
 
