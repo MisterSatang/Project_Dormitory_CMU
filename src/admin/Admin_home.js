@@ -75,7 +75,7 @@ export default function Admin_home() {
                                 <div className="col-12 d-flex justify-content-center ">
                                     <div className="col-5 d-flex justify-content-center ">
                                         <select class="form-select mb-3 " aria-label="Default select example">
-                                            <option>ระบบเปิดปิดการจองหอพัก</option><option>เปิดการจอง</option><option>ปิดการจอง</option>
+                                            <option>ระบบเปิดปิดการจองหอพัก</option>76;<option>เปิดการจอง</option><option>ปิดการจอง</option>
                                         </select>
                                     </div>
                                 </div>
