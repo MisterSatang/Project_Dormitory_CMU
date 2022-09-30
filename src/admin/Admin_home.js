@@ -17,7 +17,7 @@ export default function Admin_home() {
                                     <h3><strong>ยินดีต้อนรับเข้าสู่ระบบ Admin Dormitory CMU</strong></h3>
                                 </div>
                                 <div className="col-12 d-flex justify-content-center align-items-center">
-                                    <input type="checkbox" id="switch" /><labell className='me-2' for="switch"></labell>
+                                    <input type="checkbox" id="switch" /><label className='bt me-2' for="switch"></label>
                                     <div >
                                         <h6>ระบบเปิดปิดการจอง</h6>
                                     </div>
