@@ -11,7 +11,6 @@ export default function Add_building() {
     const [floor, setFloor] = useState('');
 
     const postDormitories = (e) => {
-        e.preventDefault();
         axios.post("http://localhost:8000/dormitories", {
             "buildingNo": Number.parseInt(numBuil),
             "floor": Number.parseInt(floor),
@@ -21,8 +20,10 @@ export default function Add_building() {
         })
             .then((response) => {
                 console.log(response);
+                alert("Post success");
             }).catch((error) => {
                 console.log(error);
+                alert("Post fail");
             })
     }
     // e.target.sex.value e.target.number.value
@@ -71,7 +72,7 @@ export default function Add_building() {
                                         </div>
                                         <div className="mb-3">
                                             <label className="form-label">เลขตึก</label>
-                                            <input class="form-control" type="text" placeholder="เช่น 1" aria-label="default input example" onChange={(e) => setNumBuil(e.target.value)} />
+                                            <input class="form-control" type="text" placeholder="เช่น 1" aria-label="default input example" onChnage={(e) => setNumBuil(e.target.value)} />
                                         </div>
 
                                         <label className="form-label">จำนวนชั้น</label>

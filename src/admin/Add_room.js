@@ -9,6 +9,7 @@ export default function Add_room() {
     const [builID, setBuilID] = useState('');
 
     const [dormitories, setDormitories] = useState([]);
+    const [post, setPost] = useState([]);
 
     useEffect(() => {
         async function getdormitories() {
@@ -21,19 +22,23 @@ export default function Add_room() {
             }
         }
         getdormitories();
-    }, []);
+    }, [post]);
 
     const postRoom = (e) => {
         e.preventDefault();
         axios.post(`http://localhost:8000/rooms/${builID}`, {
             "floor": Number.parseInt(floor),
             "roomNo": numroom,
-            "numMax": Number.parseInt(people)
+            "numMax": Number.parseInt(people),
+            "numStudent": 0
         })
             .then((response) => {
                 console.log(response);
+                setPost(dormitories);
+                alert("Post success");
             }).catch((error) => {
                 console.log(error);
+                alert("Post fail");
             })
     }
 
@@ -41,10 +46,10 @@ export default function Add_room() {
         <>
             <from onSubmit={postRoom}>
 
-                <div className='container-fluid p-0 bg-lights'>
+                <div className='container-fluid p-0'>
                     <div className='row'>
                         <Slidebar />
-                        <div className='col-9 d-flex justify-content-center'>
+                        <div className='col-6'>
                             <div class="row ms-3">
                                 <div class="col-11 text-center m-4"><h4>เพิ่มห้องพักหอพักนักศึกษา มหาวิทยาลัยเชียงใหม่</h4></div>
                                 <div class="col-2"></div>
@@ -61,7 +66,7 @@ export default function Add_room() {
                                                 ))}
                                         </select>
 
-                                        <label className="form-label">จำนวนชั้น</label>
+                                        <label className="form-label">ชั้นที่</label>
                                         <select className="mb-4 form-select" aria-label="Default select example" id="numberF loor" onChange={(e) => setFloor(e.target.value)}>
                                             <option value="" id="">-</option>
                                             <option value="1" id="1">1</option>
