@@ -28,6 +28,7 @@ export default function De_building() {
                 setdeleteDormitories(dormitories)
                 alert("Delete success");
                 setBuilID(null);
+                window.location.reload();
             }).catch((error) => {
                 console.log(error);
                 alert("Delete fail");

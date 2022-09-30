@@ -21,6 +21,7 @@ export default function Add_building() {
             .then((response) => {
                 console.log(response);
                 alert("Post success");
+                window.location.reload();
             }).catch((error) => {
                 console.log(error);
                 alert("Post fail");

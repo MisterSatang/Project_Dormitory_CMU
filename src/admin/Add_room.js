@@ -36,6 +36,7 @@ export default function Add_room() {
                 console.log(response);
                 setPost(dormitories);
                 alert("Post success");
+                window.location.reload();
             }).catch((error) => {
                 console.log(error);
                 alert("Post fail");
