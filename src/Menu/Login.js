@@ -26,10 +26,10 @@ export default function App() {
       (pass) => pass.id == usernameID.id && pass.password == inputPassword
     );
 
-    console.log(inputUsername);
-    console.log(inputPassword);
-    console.log(usernameID);
-    console.log(passwordID);
+    // console.log(inputUsername);
+    // console.log(inputPassword);
+    // console.log(usernameID);
+    // console.log(passwordID);
     // console.log(inputUsername);
     // console.log(usernameID.username);
     if (usernameID != undefined && passwordID != undefined) {

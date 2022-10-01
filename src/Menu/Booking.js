@@ -71,9 +71,9 @@ export default function App() {
   const roomID = dataResevre.find((room) => students.roomID);
 
   function deleteReserve() {
-    console.log(dataResevre);
-    console.log(students.roomID);
-    console.log(roomID);
+    // console.log(dataResevre);
+    // console.log(students.roomID);
+    // console.log(roomID);
 
     if (window.confirm(`คุณต้องการยกเลิกการจองห้อง ใช่ไหม`) == true) {
       axios
@@ -151,7 +151,6 @@ export default function App() {
                       ? "py-3 text-center text-white bg-success my-1 px-1"
                       : "py-3 text-center text-white bg-danger my-1 px-1"
                   }
-                  onClick={() => deleteReserve()}
                 >
                   {students.statusReserve
                     ? `จองหอ ${students.buildingNo} ห้อง ${students.roomNo} สำเร็จ`
@@ -160,6 +159,7 @@ export default function App() {
                     <button
                       type="button"
                       class="btn btn-outline-light bg-green-600 ms-3 cancerResever"
+                      onClick={() => deleteReserve()}
                     >
                       ยกเลิก
                     </button>
