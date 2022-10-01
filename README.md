@@ -17,3 +17,8 @@
 <div>
 <image src="https://user-images.githubusercontent.com/105336675/193399288-21dbaeb5-fe22-468e-a328-d5327b63c54f.jpg">
 <div/>
+  
+หน้าGallery
+<div>
+<image src="https://user-images.githubusercontent.com/105336675/193401100-827d5dcf-1ded-4aa8-9b30-a57c83d9e9c6.jpg">
+<div/>
