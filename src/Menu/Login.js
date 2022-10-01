@@ -22,9 +22,8 @@ export default function App() {
     const usernameID = students.find(
       (student) => student.username == inputUsername
     );
-    const passwordID = students.find(
-      (student) => student.password == inputPassword
-    );
+    const passwordID = students.find((pass) => pass.id == usernameID.id);
+
     console.log(inputUsername);
     console.log(inputPassword);
     console.log(usernameID);
