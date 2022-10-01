@@ -65,20 +65,6 @@ export default function Admin_home() {
                     {switchReserve.disableReserve ? (
                       <>
                         <div>
-                          ระบบจองกำลังเปิดอยู่...
-                          <button
-                            type="button"
-                            class="btn btn-danger ms-3"
-                            onClick={onClick}
-                          >
-                            ปิดจอง
-                          </button>
-                          <div />
-                        </div>
-                      </>
-                    ) : (
-                      <>
-                        <div>
                           ระบบจองปิด
                           <button
                             type="button"
@@ -86,6 +72,20 @@ export default function Admin_home() {
                             onClick={onClick}
                           >
                             เปิดจอง
+                          </button>
+                          <div />
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        <div>
+                          ระบบจองกำลังเปิดอยู่...
+                          <button
+                            type="button"
+                            class="btn btn-danger ms-3"
+                            onClick={onClick}
+                          >
+                            ปิดจอง
                           </button>
                           <div />
                         </div>

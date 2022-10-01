@@ -37,7 +37,7 @@ export default function Gallery() {
           <div className="col-10">
             <ul className="auto-grid " role="list">
               {galleries.image?.map((image) => (
-                <li>
+                <li key={image.id}>
                   <div className="profile">
                     <h2 className="profile__name">หอพักนักศึกษา</h2>
                     <img
