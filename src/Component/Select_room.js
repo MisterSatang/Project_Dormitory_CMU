@@ -34,7 +34,7 @@ export default function Select_room({
       console.log("no");
     }
   }
-
+  console.log(sexBuilding);
   return (
     <>
       {students.statusReserve
@@ -84,7 +84,7 @@ export default function Select_room({
                     <div class="d-flex text-white fs-3 ">{cardRoom.roomNo}</div>
                   </div>
                   <div class="d-flex justify-content-center">
-                    <div class="d-flex text-white fs-6">ห้องเลข</div>
+                    <div class="d-flex text-white fs-6">เลขห้อง</div>
                   </div>
                 </div>
               </button>

@@ -25,7 +25,7 @@ export default function App() {
 
   const [dormitories, setDormitories] = useState([]);
 
-  const [sexBuilding, setSexBuilding] = useState(3);
+  const [sexBuilding, setSexBuilding] = useState(1);
   const [floorBuilding, setFloorBuilding] = useState([]);
   const [cardRoom, setCardRoom] = useState([]);
   const [search, setSearch] = useState([]);

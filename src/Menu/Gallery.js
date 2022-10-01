@@ -29,7 +29,7 @@ export default function Gallery() {
       <div className="col-12 p-0 m-0 ">
         <div className="flow row col-12 mg101">
           <h1>รูปภาพหอพักนักศึกษามหาวิทยาลัยเชียงใหม่</h1>
-          <p>หอพักนักศึกษาหญิง อาคาร 1 </p>
+          <p>หอพักนักศึกษา อาคาร {id} </p>
         </div>
 
         <div className="row ">
